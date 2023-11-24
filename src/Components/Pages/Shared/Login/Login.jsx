@@ -1,18 +1,18 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../../Provider/AuthProvider";
 import Swal from "sweetalert2";
-import { FcGoogle } from "react-icons/fc";
+
 
 
 const Login = () => {
-    const { googleSignup, loginUser } = useContext(AuthContext);
+    const { loginUser } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
     const from = location.state?.from?.pathname || "/";
     console.log("state in the location from login pg", location.state);
 
-
+    const [loginError, setloginError] = useState('')
 
     const handlesubmit = e => {
         e.preventDefault();
@@ -37,6 +37,7 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error.message);
+                setloginError(error.message);
             })
                 // Swal.fire(
                 //     'Login Successfull',
@@ -60,11 +61,7 @@ const Login = () => {
 
     }
 
-    const handlGoogleLogin = () => {
-        googleSignup();
-        navigate(location?.state ? location.state : '/');
-
-    }
+   
     return (
         <div>
             <div className='h-full mb-10'>
@@ -78,40 +75,31 @@ const Login = () => {
                     </div>
 
                     <div className="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg  lg:max-w-4xl">
-                        <div className="hidden bg-cover lg:block lg:w-1/2" style={{ backgroundImage: "url('https://i.imgur.com/meeoYwp.jpg')" }}>
+                        <div className="hidden bg-cover  lg:block lg:w-1/2" style={{ backgroundImage: "url('https://i.imgur.com/Wxn5HB2.jpg')" }}>
 
                         </div>
 
-                        <div className="w-full px-6 py-8 md:px-8 lg:w-1/2 bg-stone-600/30">
+                        <div className="w-full px-6 py-8 md:px-8 lg:w-1/2 bg-stone-400/20">
                             <div className="flex justify-center items-center hover:rounded-lg mx-auto hover:bg-[#e3bc9a]/40 hover:text-gray-200 w-[40%]" >
-                                <img className="w-auto h-14 " src="logo.png" alt="" />
+                                <img className="w-auto h-14  " src="logo.png" alt="" />
 
                             </div>
 
-                            <p className="mt-3 text-xl text-center font-semibold text-black dark:text-gray-200">
+                            <p className="mt-3 text-xl text-center font-semibold text-gray-700 dark:text-gray-200">
                                 Welcome back !
                             </p>
 
-                            <button onClick={handlGoogleLogin} className="flex items-center justify-center gap-3 mt-4 text-white transition-colors duration-300 transform border rounded-lg bg-zinc-800/50 border-gray-700 dark:text-gray-200 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-600 w-full">
-
-                                <p className="text-xl" >
-                                    <FcGoogle></FcGoogle>
-                                </p>
-                                <span className="  py-3 font-bold ">Login with Google</span>
-                            </button>
 
                             <div className="flex items-center justify-between mt-4">
-                                <span className="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
+                                <span className="w-1/5 border-b border-[#E8604C] dark:border-gray-600 lg:w-1/4"></span>
 
-                                <a href="#" className="text-xs text-center text-gray-500 uppercase dark:text-gray-400 hover:underline">or login with email</a>
-
-                                <span className="w-1/5 border-b dark:border-gray-400 lg:w-1/4"></span>
+                                <span className="w-1/5 border-b border-[#E8604C] dark:border-gray-400 lg:w-1/4"></span>
                             </div>
 
                             <form onSubmit={handlesubmit}>
-                                {/* {
+                                {
                                     loginError && <p className="text-red-700 text-md font-bold mt-2">{loginError}</p>
-                                } */}
+                                }
 
                                 <div className="mt-4">
                                     <label className="block mb-2 text-sm font-medium text-gray-800 dark:text-gray-200" htmlFor="LoggingEmailAddress">Email Address</label>

@@ -1,14 +1,14 @@
 import { Link, useNavigate } from "react-router-dom";
-import bg from '../../assets/others/authentication2.png';
-import bg2 from '../../assets/others/authentication.png'
-import logo from '../../assets/logo.png';
+import bg2 from '../../../../../public/17.png'
 import { useForm } from "react-hook-form";
 import { Helmet } from "react-helmet-async";
 import { useContext } from "react";
-import { AuthContext } from "../../Providers/AuthProvider";
+
 import Swal from "sweetalert2";
-import useAxiosPublic from "../Shared/Hooks/useAxiosPublic";
-import SocialLogin from "../Shared/SocialLogin/SocialLogin";
+// import SocialLogin from "../Shared/SocialLogin/SocialLogin";
+import { AuthContext } from "../../../../Provider/AuthProvider";
+import useAxiosPublic from "../Hooks/useAxiosPublic";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Signup = () => {
     const {
@@ -17,25 +17,30 @@ const Signup = () => {
         formState: { errors },
     } = useForm()
 
-    const { createUser, updateUserProfile, logOut } = useContext(AuthContext);
+    const { createUser, updateUserProfile } = useContext(AuthContext);
     const axiosPublic = useAxiosPublic();
     const navigate = useNavigate();
+
     const onSubmit = (data) => {
-        console.log(data);
+        
         const email = data.email;
         const password = data.password;
+        console.log(data.PhotoURL,email,password,data.name);
+        console.log(data);
         createUser(email, password)
             .then(result => {
                 const loggedUser = result.user;
                 console.log(loggedUser);
-                updateUserProfile(data.name, data.photoURL)
+                updateUserProfile(data.name, data.PhotoURL)
                     .then(() => {
-                        // create use entry in the database 
-                        const usersInfo = {
+                        // create user entry in the database
+                        const userInfo = {
                             name: data.name,
-                            email: data.email
+                            email: data.email,
+                            photo: data.PhotoURL
                         }
-                        axiosPublic.post("/users", usersInfo)
+
+                        axiosPublic.post("/users", userInfo)
                             .then(res => {
                                 if (res.data.insertedId) {
                                     console.log("user profile info added to the database")
@@ -45,7 +50,7 @@ const Signup = () => {
                                         'You clicked the button!',
                                         'success'
                                     )
-                                    logOut();
+                                  
                                     navigate('/');
                                 }
                             })
@@ -61,16 +66,16 @@ const Signup = () => {
     return (
         <>
             <Helmet>
-                <title>Bistro Boss | Signup</title>
+                <title>SkyTrip | Signup</title>
             </Helmet>
             <div style={{ backgroundImage: `url(${bg2})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100%', paddingBottom: "80px" }}>
 
-                <div className="flex w-full max-w-sm mx-auto items-center justify-center overflow-hidden bg-transparent rounded-lg  dark:bg-gray-800 lg:max-w-6xl py-10 ">
+                <div className="flex w-full max-w-sm mx-auto items-center justify-center overflow-hidden  rounded-lg  dark:bg-gray-800 lg:max-w-6xl py-10 ">
 
-                    <div className="w-full px-6 py-8 md:px-12 lg:w-[35%]   rounded-xl shadow-2xl shadow-gray-500">
-                        <div className="flex flex-col  justify-center items-center mx-auto">
-                            <img className="w-auto h-6 sm:h-8" src={logo} alt="Logo" />
-                            <h2 className='text-xl font-bold'>Bistro-Boss</h2>
+                    <div className="w-full px-6 py-8 md:px-12 lg:w-[35%] bg-white  rounded-xl shadow-2xl shadow-gray-500">
+                        <div className="flex   justify-center items-center mx-auto">
+                            <img className="w-auto h-6 sm:h-8" src='logo.png' alt="Logo" />
+                            <h2 className='text-xl font-bold'>SkyTrip</h2>
                         </div>
                         {/* welcome  */}
                         <div className="flex items-center justify-between ">
@@ -85,14 +90,12 @@ const Signup = () => {
                         </div>
 
                         <form onSubmit={handleSubmit(onSubmit)}>
-                            {/* {
-                            loginError && <p className="text-red-700 text-md font-bold mt-2">{loginError}</p>
-                        } */}
+
                             <div className="relative z-0 w-full mb-6 group mt-4">
                                 <input
                                     type="text"
                                     name="name"
-                                    {...register("name", { required: true, maxLength: 20 })}
+                                    {...register("name", { required: true})}
                                     className="block py-2.5  px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-amber-800 peer"
                                     placeholder=" "
                                 />
@@ -130,7 +133,7 @@ const Signup = () => {
                                     placeholder=" "
                                 />
                                 {errors.email && <span className="text-sm font-semibold text-red-700">
-                                    This field is required
+                                    {errors.email}
                                 </span>}
                                 <label
                                     className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-2 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-amber-800 peer-focus:dark:text-amber-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
@@ -197,9 +200,9 @@ const Signup = () => {
                         </div>
                     </div>
 
-                    <div className="hidden  lg:block lg:w-1/2" >
+                    {/* <div className="hidden  lg:block lg:w-1/2" >
                         <img src={bg} alt="" className='object-cover' />
-                    </div>
+                    </div> */}
                 </div>
 
             </div>

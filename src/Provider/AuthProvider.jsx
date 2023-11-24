@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import app from "../Firebase/Firebase.config";
 import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, updateProfile, signInWithPopup } from "firebase/auth";
 import PropTypes from 'prop-types';
+// import useAxiosPublic from "../Components/Pages/Shared/Hooks/useAxiosPublic";
 
 
 export const AuthContext = createContext(null);
@@ -28,6 +29,7 @@ const AuthProvider = ({ children }) => {
     // create user with email and password 
     const createUser = (email, password) => {
         setLoading(true);
+        console.log(email, password);
         return createUserWithEmailAndPassword(auth, email, password);
     };
 
@@ -51,7 +53,7 @@ const AuthProvider = ({ children }) => {
     }, []);
 
     const updateUserProfile = (name, photo) => {
-        return updateProfile(auth.currentUser, {
+        return updateProfile (auth.currentUser, {
             displayName: name, photoURL: photo
         });
     };
