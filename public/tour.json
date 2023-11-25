@@ -1,0 +1,1335 @@
+[
+{
+  "title": "Historical Tour in Edinburgh",
+  "type": "historical",
+  "price": 200,
+  "guide_name": "Isabella Wright",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Welcome to Edinburgh\nExplore historical sites and landmarks"
+    },
+    {
+      "day": "Day 02",
+      "description": "Royal Palace Visit\nGuided tour through ancient royal residences"
+    },
+    {
+      "day": "Day 03",
+      "description": "Museum Exploration\nVisit local museums and learn about history"
+    },
+    {
+      "day": "Day 04",
+      "description": "Free Day\nEnjoy leisure time in the city"
+    },
+    {
+      "day": "Day 05",
+      "description": "Departure\nWrap-up and departure"
+    }
+  ],
+  "max_people": 15,
+  "spot_name": "Edinburgh City Center",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/8IEjys2.jpg",
+    "https://i.imgur.com/B97HvEu.jpg",
+    "https://i.imgur.com/Dmspx3r.jpg"
+  ]
+},
+{
+  "title": "Wildlife Safari",
+  "type": "wildlife",
+  "price": 300,
+  "guide_name": "Nikos Georgiou",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Safari Adventure\nExplore the wildlife in their natural habitat."
+    },
+    {
+      "day": "Day 02",
+      "description": "Animal Tracking\nLearn to track different wildlife species."
+    },
+    {
+      "day": "Day 03",
+      "description": "Bird Watching\nObserve a variety of bird species."
+    },
+    {
+      "day": "Day 04",
+      "description": "Nature Walk\nExplore the diverse flora and fauna."
+    },
+    {
+      "day": "Day 05",
+      "description": "Return Journey\nDeparture from the wildlife reserve."
+    }
+  ],
+  "max_people": 10,
+  "spot_name": "Safari Adventure Park",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/CZArkmG.jpg",
+    "https://i.imgur.com/iuIvnkb.jpg",
+    "https://i.imgur.com/eyPGBsB.jpg"
+  ]
+},
+{
+  "title": "Historical Tour",
+  "type": "historical",
+  "price": 200,
+  "guide_name": "Nikos Georgiou",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Explore Ancient Ruins\nDiscover the history of the ancient city."
+    },
+    {
+      "day": "Day 02",
+      "description": "Museum Visits\nExplore museums showcasing artifacts."
+    },
+    {
+      "day": "Day 03",
+      "description": "Historical Landmarks\nVisit iconic historical sites."
+    },
+    {
+      "day": "Day 04",
+      "description": "Cultural Immersion\nExperience local traditions and cuisine."
+    },
+    {
+      "day": "Day 05",
+      "description": "Return Journey\nDeparture from the historical city."
+    }
+  ],
+  "max_people": 15,
+  "spot_name": "Ancient City Tour",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/qrXgWUE.jpg",
+    "https://i.imgur.com/rPBDuas.jpg",
+    "https://i.imgur.com/DhdMD5q.jpg"
+  ]
+},
+{
+  "title": "Mountain Adventure Hike",
+  "type": "hiking",
+  "price": 300,
+  "guide_name": "David Brute",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Trail Orientation and Start\nPrepare for the challenging hike..."
+    },
+    {
+      "day": "Day 02",
+      "description": "Summit Ascent\nReach the peak and enjoy breathtaking views..."
+    },
+    {
+      "day": "Day 03",
+      "description": "Descent and Camp\nDescend and camp overnight..."
+    },
+    {
+      "day": "Day 04",
+      "description": "Return Trek\nBegin return trek to base..."
+    },
+    {
+      "day": "Day 05",
+      "description": "Conclusion\nSay goodbye to the mountain..."
+    }
+  ],
+  "max_people": 10,
+  "spot_name": "Mount Adventure Peak",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/OLm7Ca5.jpg",
+    "https://i.imgur.com/7u0Uwtn.jpg",
+    "https://i.imgur.com/ms3M4aL.jpg"
+  ]
+},
+{
+  "title": "Mountain Hiking Expedition",
+  "type": "hiking",
+  "price": 250,
+  "guide_name": "Mark Johnson",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Embark on a challenging hike through breathtaking mountain trails."
+    },
+    {
+      "day": "Day 02",
+      "description": "Ascend to stunning viewpoints and witness panoramic vistas."
+    },
+    {
+      "day": "Day 03",
+      "description": "Camp under the stars and immerse yourself in nature's serenity."
+    },
+    {
+      "day": "Day 04",
+      "description": "Explore nearby valleys and experience local wildlife."
+    },
+    {
+      "day": "Day 05",
+      "description": "Descend and conclude your memorable hiking expedition."
+    }
+  ],
+  "max_people": 12,
+  "spot_name": "Mountain Peaks Hiking",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/OLm7Ca5.jpg",
+    "https://i.imgur.com/7u0Uwtn.jpg",
+    "https://i.imgur.com/ms3M4aL.jpg"
+  ]
+},
+{
+  "title": "Historical Walking Tour",
+  "type": "walking",
+  "price": 120,
+  "guide_name": "David Brute",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Start your exploration of historical sites in the heart of the city."
+    },
+    {
+      "day": "Day 02",
+      "description": "Discover hidden alleys and learn intriguing stories behind the landmarks."
+    },
+    {
+      "day": "Day 03",
+      "description": "Immerse yourself in the rich history and architecture of the area."
+    },
+    {
+      "day": "Day 04",
+      "description": "Enjoy a free day to explore at your own pace."
+    },
+    {
+      "day": "Day 05",
+      "description": "Wrap up your walking adventure and bid farewell to the city."
+    }
+  ],
+  "max_people": 15,
+  "spot_name": "City Historical Walk",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/gtDW8nV.jpg",
+    "https://i.imgur.com/4fi4N7C.jpg",
+    "https://i.imgur.com/EOkMXM6.jpg"
+  ]
+},
+{
+  "title": "Greek Islands Odyssey",
+  "type": "boatriding",
+  "price": 400,
+  "guide_name": "Mark Johnson",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Arrival in Athens\nBeginning the journey in the capital."
+    },
+    {
+      "day": "Day 02",
+      "description": "Island Cruising\nVisiting multiple Greek islands."
+    },
+    {
+      "day": "Day 03",
+      "description": "Beach Explorations\nExploring stunning beaches on different islands."
+    },
+    {
+      "day": "Day 04",
+      "description": "Cultural Immersion\nExperiencing local Greek culture and cuisine."
+    },
+    {
+      "day": "Day 05",
+      "description": "Final Island Visit and Departure\nEnding the voyage on a beautiful island."
+    }
+  ],
+  "max_people": 15,
+  "spot_name": "Greek Islands",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/nmo1XN3.jpg",
+    "https://i.imgur.com/cyP1RJy.jpg",
+    "https://i.imgur.com/xsPHkZ3.jpg"
+  ]
+},
+{
+  "title": "Amsterdam Canals Discovery",
+  "type": "boatriding",
+  "price": 180,
+  "guide_name": "Mark Johnson",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Introduction to Amsterdam\nStarting the journey in the historic city."
+    },
+    {
+      "day": "Day 02",
+      "description": "Canal Cruise\nExploring the picturesque canals and landmarks."
+    },
+    {
+      "day": "Day 03",
+      "description": "Museum Visits\nExploring museums and cultural sites."
+    },
+    {
+      "day": "Day 04",
+      "description": "Relaxation and Shopping\nLeisure time and shopping in the city."
+    },
+    {
+      "day": "Day 05",
+      "description": "Farewell and Departure\nEnding the tour in Amsterdam."
+    }
+  ],
+  "max_people": 12,
+  "spot_name": "Amsterdam, Netherlands",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/nmo1XN3.jpg",
+    "https://i.imgur.com/cyP1RJy.jpg",
+    "https://i.imgur.com/xsPHkZ3.jpg"
+  ]
+},
+{
+  "title": "Amazon River Adventure",
+  "type": "boatriding",
+  "price": 500,
+  "guide_name": "David Brute",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Embarking on the Amazon\nSetting sail on the mighty Amazon River."
+    },
+    {
+      "day": "Day 02",
+      "description": "Jungle Excursions\nExploring remote parts of the rainforest."
+    },
+    {
+      "day": "Day 03",
+      "description": "Wildlife Spotting\nObserving diverse wildlife along the riverbanks."
+    },
+    {
+      "day": "Day 04",
+      "description": "Cultural Encounters\nMeeting indigenous tribes and learning traditions."
+    },
+    {
+      "day": "Day 05",
+      "description": "Return Journey\nHeading back from the Amazon expedition."
+    }
+  ],
+  "max_people": 8,
+  "spot_name": "Amazon Rainforest, Brazil",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/znFWXj1.jpg",
+    "https://i.imgur.com/DsqYfAA.jpg",
+    "https://i.imgur.com/DZs2RNv.jpg"
+  ]
+},
+{
+  "title": "Santorini Sunset Cruise",
+  "type": "boatriding",
+  "price": 300,
+  "guide_name": "Mark Johnson",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Welcome to Santorini\nArrival and introduction to the island."
+    },
+    {
+      "day": "Day 02",
+      "description": "Caldera Cruise\nSailing around the caldera and exploring hidden coves."
+    },
+    {
+      "day": "Day 03",
+      "description": "Volcano Exploration\nVisiting the volcano and hot springs."
+    },
+    {
+      "day": "Day 04",
+      "description": "Beach Relaxation\nLeisure time at the island's beautiful beaches."
+    },
+    {
+      "day": "Day 05",
+      "description": "Farewell\nDeparture from Santorini."
+    }
+  ],
+  "max_people": 10,
+  "spot_name": "Santorini, Greece",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/znFWXj1.jpg",
+    "https://i.imgur.com/DsqYfAA.jpg",
+    "https://i.imgur.com/DZs2RNv.jpg"
+  ]
+},
+{
+  "title": "Redwood Forest Camping Experience",
+  "type": "camping",
+  "price": 300,
+  "guide_name": "Mark Johnson",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Arrival and Campsite Setup\nSetting up tents amidst the majestic redwoods."
+    },
+    {
+      "day": "Day 02",
+      "description": "Nature Walks and Wildlife Spotting\nExploring the forest trails and observing wildlife."
+    },
+    {
+      "day": "Day 03",
+      "description": "Campfire and Storytelling\nGather around the fire for stories and marshmallow roasting."
+    },
+    {
+      "day": "Day 04",
+      "description": "Relaxation and Meditation\nEngaging in yoga and meditation sessions amidst nature."
+    },
+    {
+      "day": "Day 05",
+      "description": "Pack Up and Farewell\nEnding the serene camping experience."
+    }
+  ],
+  "max_people": 10,
+  "spot_name": "Redwood National Park",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/6Phczk1.jpg",
+    "https://i.imgur.com/7RzD7hA.jpg",
+    "https://i.imgur.com/GALwp0L.jpg"
+  ]
+},
+{
+  "title": "Tranquil Lakeside Camping Retreat",
+  "type": "camping",
+  "price": 320,
+  "guide_name": "Mark Johnson",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Arrival at the Lakeside\nSetting up camp near the serene lake."
+    },
+    {
+      "day": "Day 02",
+      "description": "Fishing and Water Activities\nEnjoying fishing and water sports."
+    },
+    {
+      "day": "Day 03",
+      "description": "Picnic and Relaxation\nA leisurely day with a lakeside picnic."
+    },
+    {
+      "day": "Day 04",
+      "description": "Bonfire and Stargazing\nGather around the fire for stories and stargazing."
+    },
+    {
+      "day": "Day 05",
+      "description": "Packing Up and Departure\nEnding the lakeside camping experience."
+    }
+  ],
+  "max_people": 12,
+  "spot_name": "Tranquil Lake Retreat",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/V5asSxq.jpg",
+    "https://i.imgur.com/6Phczk1.jpg",
+    "https://i.imgur.com/GALwp0L.jpg"
+  ]
+},
+{
+  "title": "Sahara Dunes: Desert Camping Adventure",
+  "type": "camping",
+  "price": 400,
+  "guide_name": "Carlos Rodriguez",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Arrival in the Desert\nSetting up camp amidst the Sahara dunes."
+    },
+    {
+      "day": "Day 02",
+      "description": "Dune Bashing and Camel Rides\nThrilling activities in the desert landscape."
+    },
+    {
+      "day": "Day 03",
+      "description": "Cultural Evening\nExperiencing local music and cuisine."
+    },
+    {
+      "day": "Day 04",
+      "description": "Sunrise Trek and Sandboarding\nAdventures with the desert sunrise and sandboarding."
+    },
+    {
+      "day": "Day 05",
+      "description": "Farewell and Departure\nEnding the desert camping expedition."
+    }
+  ],
+  "max_people": 6,
+  "spot_name": "Sahara Desert",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/V5asSxq.jpg",
+    "https://i.imgur.com/6Phczk1.jpg",
+    "https://i.imgur.com/GALwp0L.jpg"
+  ]
+},
+{
+  "title": "Family Fun at Cox's Bazar",
+  "type": "seabeach",
+  "price": 220,
+  "guide_name": "Rahul Das ",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Family Resort Check-in\nArrival and settling in at the family-friendly resort."
+    },
+    {
+      "day": "Day 02",
+      "description": "Sandcastle Building and Beach Games\nFamily activities on the beach."
+    },
+    {
+      "day": "Day 03",
+      "description": "Dolphin Watching Tour\nExcursion to spot dolphins."
+    },
+    {
+      "day": "Day 04",
+      "description": "Local Cultural Show\nEnjoying local cultural performances."
+    },
+    {
+      "day": "Day 05",
+      "description": "Family Farewell\nWrapping up the memorable family vacation."
+    }
+  ],
+  "max_people": 10,
+  "spot_name": "Family Cox's Bazar",
+  "days": 5,
+  "photos": [
+    "https://example.com/coxs_bazar_family1.jpg",
+    "https://example.com/coxs_bazar_family2.jpg",
+    "https://example.com/coxs_bazar_family3.jpg"
+  ]
+},
+{
+  "title": "Romantic Escape: Cox's Bazar Retreat",
+  "type": "seabeach",
+  "price": 300,
+  "guide_name": "Rahul Das",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Arrival at the Beachside Villa\nCheck-in to a private villa overlooking the beach."
+    },
+    {
+      "day": "Day 02",
+      "description": "Private Beach Picnic\nEnjoy a secluded picnic on the beach."
+    },
+    {
+      "day": "Day 03",
+      "description": "Sunset Cruise and Candlelight Dinner\nRomantic cruise and dinner by the sea."
+    },
+    {
+      "day": "Day 04",
+      "description": "Spa Day and Relaxation\nIndulge in a spa session and relaxation time."
+    },
+    {
+      "day": "Day 05",
+      "description": "Departure\nSaying goodbye to the serene Cox's Bazar."
+    }
+  ],
+  "max_people": 8,
+  "spot_name": "Romantic Cox's Bazar",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/jNhJGqH.jpg",
+    "https://i.imgur.com/78T0Yu0.jpg",
+    "https://i.imgur.com/o498pbx.jpg"
+  ]
+},
+{
+  "title": "Thrilling Seaside Adventures in Cox's Bazar",
+  "type": "seabeach",
+  "price": 250,
+  "guide_name": "Rahul Das",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Arrival and Beachside Check-in\nSettling in at the beachside resort."
+    },
+    {
+      "day": "Day 02",
+      "description": "Jet Skiing and Parasailing\nExperience thrilling water sports activities."
+    },
+    {
+      "day": "Day 03",
+      "description": "Beach Volleyball and Bonfire\nEnjoying sports and an evening bonfire."
+    },
+    {
+      "day": "Day 04",
+      "description": "Local Market Exploration\nExploring local markets for souvenirs."
+    },
+    {
+      "day": "Day 05",
+      "description": "Departure\nEnding the adventure-filled tour."
+    }
+  ],
+  "max_people": 12,
+  "spot_name": "Cox's Bazar Shoreline",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/4DSFOO7.jpg",
+    "https://i.imgur.com/Nje9Hzu.jpg",
+    "https://i.imgur.com/cQAR7z8.jpg"
+  ]
+},
+{
+  "title": "Sunset Serenity at Cox's Bazar",
+  "type": "seabeach",
+  "price": 180,
+  "guide_name": "Rahul Das",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Arrival at Cox's Bazar\nWelcome to the world's longest natural sea beach."
+    },
+    {
+      "day": "Day 02",
+      "description": "Beachside Relaxation\nEnjoying the sun, sand, and sea."
+    },
+    {
+      "day": "Day 03",
+      "description": "Water Sports and Activities\nParticipating in water sports and beach activities."
+    },
+    {
+      "day": "Day 04",
+      "description": "Local Cuisine Exploration\nSampling local delicacies and seafood."
+    },
+    {
+      "day": "Day 05",
+      "description": "Departure\nFarewell to the tranquil Cox's Bazar."
+    }
+  ],
+  "max_people": 15,
+  "spot_name": "Cox's Bazar Beach",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/T3xcNB4.jpg",
+    "https://i.imgur.com/cQAR7z8.jpg",
+    "https://i.imgur.com/Nje9Hzu.jpg"
+  ]
+},
+{
+  "title": "Luxury Private Jet Tour",
+  "type": "airrides",
+  "price": 15000,
+  "guide_name": "Nikos Georgiou",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Jet Introduction and Departure\nBoarding the private jet and heading to European capitals."
+    },
+    {
+      "day": "Day 02",
+      "description": "City Tour: London\nExploring iconic landmarks in London."
+    },
+    {
+      "day": "Day 03",
+      "description": "City Tour: Paris\nExploring the beauty of Parisian attractions."
+    },
+    {
+      "day": "Day 04",
+      "description": "City Tour: Rome\nDiscovering historical sites in Rome."
+    },
+    {
+      "day": "Day 05",
+      "description": "Return Journey\nFlying back and concluding the luxury tour."
+    }
+  ],
+  "max_people": 6,
+  "spot_name": "European Capitals Tour",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/No9uV94.jpg",
+    "https://i.imgur.com/xpOZAqu.jpg",
+    "https://i.imgur.com/WsHr5eo.jpg"
+  ]
+},
+{
+  "title": "Dubai Skydiving Thrill",
+  "type": "airrides",
+  "price": 600,
+  "guide_name": "Nikos Georgiou",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Training and Briefing\nTraining for the exhilarating skydive."
+    },
+    {
+      "day": "Day 02",
+      "description": "Skydiving Adventure\nJumping from a plane above Dubai."
+    },
+    {
+      "day": "Day 03",
+      "description": "Celebration and Certificate\nCelebrating the experience and receiving certificates."
+    },
+    {
+      "day": "Day 04",
+      "description": "Relaxation and Exploration\nFree time to relax or explore Dubai."
+    },
+    {
+      "day": "Day 05",
+      "description": "Farewell and Departure\nEnding the thrilling skydiving experience."
+    }
+  ],
+  "max_people": 4,
+  "spot_name": "Dubai Skydive",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/No9uV94.jpg",
+    "https://i.imgur.com/xpOZAqu.jpg",
+    "https://i.imgur.com/WsHr5eo.jpg"
+  ]
+},
+{
+  "title": "Grand Canyon Helicopter Experience",
+  "type": "airrides",
+  "price": 450,
+  "guide_name": "Nikos Georgiou",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Helicopter Introduction\nBriefing about the Grand Canyon flight."
+    },
+    {
+      "day": "Day 02",
+      "description": "Scenic Flight\nExploring the stunning views of the Grand Canyon."
+    },
+    {
+      "day": "Day 03",
+      "description": "Canyon Landing and Picnic\nLanding within the canyon for a picnic."
+    },
+    {
+      "day": "Day 04",
+      "description": "Optional Activities\nExtra activities available on request."
+    },
+    {
+      "day": "Day 05",
+      "description": "Farewell and Departure\nEnding the Grand Canyon adventure."
+    }
+  ],
+  "max_people": 6,
+  "spot_name": "Grand Canyon, Arizona",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/XPM6Z86.jpg",
+    "https://i.imgur.com/IWV93Y1.jpg",
+    "https://i.imgur.com/Sp5GYaZ.jpg"
+  ]
+},
+{
+  "title": "Sunrise Hot Air Balloon Flight",
+  "type": "airrides",
+  "price": 300,
+  "guide_name": "Sophie Berg",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Preparation and Balloon Setup\nPreparing for the sunrise flight."
+    },
+    {
+      "day": "Day 02",
+      "description": "Sunrise Flight Experience\nSoaring above landscapes during sunrise."
+    },
+    {
+      "day": "Day 03",
+      "description": "Celebratory Breakfast\nEnjoying breakfast after the flight."
+    },
+    {
+      "day": "Day 04",
+      "description": "Relaxation and Exploration\nFree time for relaxation or exploration."
+    },
+    {
+      "day": "Day 05",
+      "description": "Farewell and Departure\nEnding the hot air balloon adventure."
+    }
+  ],
+  "max_people": 8,
+  "spot_name": "Napa Valley Balloons",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/3QaLORP.jpg",
+    "https://i.imgur.com/QdRx9uW.jpg",
+    "https://i.imgur.com/gYjVKK7.jpg"
+  ]
+},
+{
+  "title": "Charm of Paris Honeymoon",
+  "type": "honeymoon",
+  "price": 1200,
+  "guide_name": "Sophie Berg",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Arrival in Paris\nWelcoming the city of love and lights."
+    },
+    {
+      "day": "Day 02",
+      "description": "City of Romance\nVisiting iconic landmarks and indulging in gourmet cuisine."
+    },
+    {
+      "day": "Day 03",
+      "description": "Seine River Cruise\nRomantic cruise along the Seine River."
+    },
+    {
+      "day": "Day 04",
+      "description": "Art and Culture Exploration\nExploring museums and art galleries."
+    },
+    {
+      "day": "Day 05",
+      "description": "Farewell and Departure\nSaying adieu to Paris."
+    }
+  ],
+  "max_people": 2,
+  "spot_name": "Paris, France",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/Q1SabGl.jpg",
+    "https://i.imgur.com/SBk642B.jpg",
+    "https://i.imgur.com/W7dXnQX.jpg"
+  ]
+},
+{
+  "title": "Enchanting Santorini Honeymoon",
+  "type": "honeymoon",
+  "price": 1000,
+  "guide_name": "Sophie Berg",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Arrival in Santorini\nGreeted by the captivating beauty of Santorini."
+    },
+    {
+      "day": "Day 02",
+      "description": "Exploration of Villages\nDiscovering charming villages and sunset views."
+    },
+    {
+      "day": "Day 03",
+      "description": "Volcano Tour and Hot Springs\nAdventuring to the volcanic crater and hot springs."
+    },
+    {
+      "day": "Day 04",
+      "description": "Winery Visit and Relaxation\nIndulging in wine tasting and leisure time."
+    },
+    {
+      "day": "Day 05",
+      "description": "Farewell and Departure\nSaying goodbye to Santorini."
+    }
+  ],
+  "max_people": 2,
+  "spot_name": "Santorini, Greece",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/Q1SabGl.jpg",
+    "https://i.imgur.com/SBk642B.jpg",
+    "https://i.imgur.com/SgeSDM9.jpg"
+  ]
+},
+{
+  "title": "Romantic Journey: Dhaka & Cox's Bazar",
+  "type": "honeymoon",
+  "price": 600,
+  "guide_name": "Rahim Khan",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Arrival in Dhaka\nWelcoming the historical and vibrant city of Dhaka."
+    },
+    {
+      "day": "Day 02",
+      "description": "City Exploration\nVisiting historical landmarks and markets."
+    },
+    {
+      "day": "Day 03",
+      "description": "Travel to Cox's Bazar\nJourney to the world's longest sea beach."
+    },
+    {
+      "day": "Day 04",
+      "description": "Beachside Bliss\nRelaxing on the pristine beaches of Cox's Bazar."
+    },
+    {
+      "day": "Day 05",
+      "description": "Farewell and Departure\nBid farewell to the coastal beauty."
+    }
+  ],
+  "max_people": 2,
+  "spot_name": "Dhaka & Cox's Bazar, Bangladesh",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/Nje9Hzu.jpg",
+     "https://i.imgur.com/SBk642B.jpg",
+    "https://i.imgur.com/SgeSDM9.jpg"
+  ]
+},
+{
+  "title": "Exotic Bali Honeymoon",
+  "type": "honeymoon",
+  "price": 800,
+  "guide_name": "Sophie Berg",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Arrival and Resort Welcome\nWarm welcome to the luxurious resort in Bali."
+    },
+    {
+      "day": "Day 02",
+      "description": "Beachside Romance\nRelaxing and enjoying the beautiful beaches."
+    },
+    {
+      "day": "Day 03",
+      "description": "Cultural Exploration\nVisiting temples and experiencing local culture."
+    },
+    {
+      "day": "Day 04",
+      "description": "Private Villa Retreat\nIndulging in a private villa experience."
+    },
+    {
+      "day": "Day 05",
+      "description": "Farewell and Departure\nSaying goodbye to Bali."
+    }
+  ],
+  "max_people": 2,
+  "spot_name": "Bali, Indonesia",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/jNhJGqH.jpg",
+     "https://i.imgur.com/sIOMqJ3.jpg",
+    "https://i.imgur.com/fM8O1jT.jpg"
+  ]
+},
+{
+  "title": "Exploring Sundarbans Wildlife",
+  "type": "wildlife",
+  "price": 300,
+  "guide_name": "Rajesh Thapa",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Arrival and Introduction to Sundarbans\nExplore the largest mangrove forest in the world."
+    },
+    {
+      "day": "Day 02",
+      "description": "Boat Safari and Tiger Tracking\nSafari to spot Royal Bengal Tigers and other wildlife."
+    },
+    {
+      "day": "Day 03",
+      "description": "Bird Watching Expedition\nDiscover diverse bird species in their habitat."
+    },
+    {
+      "day": "Day 04",
+      "description": "Cultural Interaction and Village Visit\nInteract with locals and experience their lifestyle."
+    },
+    {
+      "day": "Day 05",
+      "description": "Farewell and Departure\nBid adieu to the Sundarbans."
+    }
+  ],
+  "max_people": 10,
+  "spot_name": "Sundarbans Mangrove Forest",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/e7Qnqtr.jpg",
+    "https://i.imgur.com/aUAIs5E.jpg",
+    "https://i.imgur.com/Gl86Bmb.jpg"
+  ]
+},
+{
+  "title": "Chitwan Wildlife Safari",
+  "type": "wildlife",
+  "price": 250,
+  "guide_name": "Rajesh Thapa",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Arrival and Introduction to Chitwan\nDiscover the lush Chitwan National Park."
+    },
+    {
+      "day": "Day 02",
+      "description": "Elephant Safari and Rhino Encounter\nExplore on elephant back and spot rhinos."
+    },
+    {
+      "day": "Day 03",
+      "description": "Jungle Walk and Wildlife Observation\nWalk through the jungle and observe wildlife."
+    },
+    {
+      "day": "Day 04",
+      "description": "Tharu Cultural Show\nEnjoy traditional Tharu dance and music."
+    },
+    {
+      "day": "Day 05",
+      "description": "Departure\nBid farewell to Chitwan National Park."
+    }
+  ],
+  "max_people": 12,
+  "spot_name": "Chitwan National Park",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/UjrrSuz.jpg",
+    "https://i.imgur.com/UjrrSuz.jpg",
+    "https://i.imgur.com/rdkJGYx.jpg"
+  ]
+},
+{
+  "title": "African Wilderness Safari",
+  "type": "wildlife",
+  "price": 500,
+  "guide_name": "David Brute",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Arrival and Introduction to African Savanna\nEmbark on an adventure in the wild."
+    },
+    {
+      "day": "Day 02",
+      "description": "Game Drives and Big Five Encounter\nSpot lions, elephants, buffalos, leopards, and rhinos."
+    },
+    {
+      "day": "Day 03",
+      "description": "Bush Walks and Bird Watching\nExplore on foot and observe diverse bird species."
+    },
+    {
+      "day": "Day 04",
+      "description": "Campfire Stories and Cultural Experience\nExperience local traditions and stories."
+    },
+    {
+      "day": "Day 05",
+      "description": "Departure\nBid farewell to the African wilderness."
+    }
+  ],
+  "max_people": 8,
+  "spot_name": "African Savanna",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/xRO2u92.jpg",
+    "https://i.imgur.com/OMOuTuo.jpg",
+    "https://i.imgur.com/JhKJ2i3.jpg"
+  ]
+},
+{
+  "title": "Amazon Rainforest Wildlife Adventure",
+  "type": "wildlife",
+  "price": 400,
+  "guide_name": "David Brute",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Arrival and Introduction to the Amazon\nEnter the world's largest tropical rainforest."
+    },
+    {
+      "day": "Day 02",
+      "description": "River Cruise and Pink Dolphin Sighting\nNavigate the river and spot unique wildlife."
+    },
+    {
+      "day": "Day 03",
+      "description": "Night Jungle Safari\nExplore nocturnal creatures in the jungle."
+    },
+    {
+      "day": "Day 04",
+      "description": "Indigenous Community Visit\nInteract with local tribes and learn their culture."
+    },
+    {
+      "day": "Day 05",
+      "description": "Farewell and Departure\nBid adieu to the Amazon Rainforest."
+    }
+  ],
+  "max_people": 15,
+  "spot_name": "Amazon Rainforest",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/DZs2RNv.jpg",
+    "https://i.imgur.com/wAlOy8M.jpg",
+    "https://i.imgur.com/znFWXj1.jpg"
+  ]
+},
+{
+  "title": "Inca Trail to Machu Picchu",
+  "type": "hiking",
+  "price": 500,
+  "guide_name": "Carlos Rodriguez",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Start of the Inca Trail\nCommencing the legendary trail."
+    },
+    {
+      "day": "Day 02",
+      "description": "Inca Ruins Exploration\nDiscovering ancient ruins along the trail."
+    },
+    {
+      "day": "Day 03",
+      "description": "Mountain Pass Crossing\nTraversing through high mountain passes."
+    },
+    {
+      "day": "Day 04",
+      "description": "Arrival at Machu Picchu\nReaching the historic Machu Picchu site."
+    },
+    {
+      "day": "Day 05",
+      "description": "Machu Picchu Tour and Departure\nExploring Machu Picchu before departure."
+    }
+  ],
+  "max_people": 16,
+  "spot_name": "Machu Picchu, Peru",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/4iCeQTU.jpg",
+    "https://i.imgur.com/LCeewJb.jpg",
+    "https://i.imgur.com/NTuDjvn.jpg"
+  ]
+},
+{
+  "title": "Rocky Mountain Summit Quest",
+  "type": "hiking",
+  "price": 300,
+  "guide_name": "Carlos Rodriguez",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Arrival in Rocky Mountain Park\nIntroduction to the stunning mountainous region."
+    },
+    {
+      "day": "Day 02",
+      "description": "Mountain Trails Exploration\nHiking through scenic mountain trails."
+    },
+    {
+      "day": "Day 03",
+      "description": "Summit Ascent\nClimbing towards the park's highest peaks."
+    },
+    {
+      "day": "Day 04",
+      "description": "Nature Photography and Relaxation\nCapturing nature's beauty and leisure time."
+    },
+    {
+      "day": "Day 05",
+      "description": "Farewell and Departure\nEnding the Rocky Mountain adventure."
+    }
+  ],
+  "max_people": 12,
+  "spot_name": "Rocky Mountain National Park",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/7u0Uwtn.jpg",
+    "https://i.imgur.com/LxLX6TA.jpg",
+    "https://i.imgur.com/OLm7Ca5.jpg"
+  ]
+},
+{
+  "title": "Chittagong Hill Tracts Adventure",
+  "type": "hiking",
+  "price": 220,
+  "guide_name": "Rajesh Thapa",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Arrival in the Hill Tracts\nOrientation and introduction to the hilly terrain."
+    },
+    {
+      "day": "Day 02",
+      "description": "Hill Trekking\nExploring trails and picturesque landscapes."
+    },
+    {
+      "day": "Day 03",
+      "description": "Waterfall Visits and Cultural Immersion\nDiscovering waterfalls and local culture."
+    },
+    {
+      "day": "Day 04",
+      "description": "Village Tours and Handicrafts\nVisiting villages and experiencing local crafts."
+    },
+    {
+      "day": "Day 05",
+      "description": "Departure\nSaying goodbye to the Chittagong Hill Tracts."
+    }
+  ],
+  "max_people": 8,
+  "spot_name": "Chittagong Hill Tracts",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/Kecaokk.jpg",
+    "https://i.imgur.com/7u0Uwtn.jpg",
+    "https://i.imgur.com/GQ5QN9Z.jpg"
+  ]
+},
+{
+  "title": "Sundarbans Jungle Trek",
+  "type": "hiking",
+  "price": 180,
+  "guide_name": " Rajesh Thapa",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Arrival at Sundarbans\nIntroduction to the mangrove forest."
+    },
+    {
+      "day": "Day 02",
+      "description": "Exploring Wildlife\nHiking through diverse flora and fauna."
+    },
+    {
+      "day": "Day 03",
+      "description": "Boat Safari and Tiger Spotting\nSpotting Bengal tigers via boat safari."
+    },
+    {
+      "day": "Day 04",
+      "description": "Bird Watching and Cultural Interaction\nObserving unique bird species and meeting locals."
+    },
+    {
+      "day": "Day 05",
+      "description": "Departure\nFarewell to Sundarbans."
+    }
+  ],
+  "max_people": 10,
+  "spot_name": "Sundarbans National Park",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/aUAIs5E.jpg",
+    "https://i.imgur.com/e7Qnqtr.jpg",
+    "https://i.imgur.com/UjrrSuz.jpg"
+  ]
+},
+{
+  "title": "Professional Tennis Camp in Barcelona",
+  "type": "sports",
+  "price": 400,
+  "guide_name": "Isabella Wright",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Camp Check-in and Orientation\nIntroduction to the tennis facilities."
+    },
+    {
+      "day": "Day 02",
+      "description": "Skill Development Sessions\nProfessional training and skill enhancement."
+    },
+    {
+      "day": "Day 03",
+      "description": "Match Play and Strategy\nPracticing strategies in simulated matches."
+    },
+    {
+      "day": "Day 04",
+      "description": "Fitness and Recovery\nFitness sessions and recovery techniques."
+    },
+    {
+      "day": "Day 05",
+      "description": "Closing Ceremony\nConcluding the tennis training camp."
+    }
+  ],
+  "max_people": 6,
+  "spot_name": "Barcelona, Spain",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/4iCeQTU.jpg",
+    "https://i.imgur.com/BnGldIC.jpg",
+    "https://i.imgur.com/VaNwQbv.jpg"
+  ]
+},
+{
+  "title": "Luxury Golfing at Pebble Beach",
+  "type": "sports",
+  "price": 500,
+  "guide_name": " Isabella Wright",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Golf Resort Arrival\nCheck-in and introduction to the golf course."
+    },
+    {
+      "day": "Day 02",
+      "description": "Golfing Sessions\nPlaying at the renowned Pebble Beach golf course."
+    },
+    {
+      "day": "Day 03",
+      "description": "Relaxation and Spa Day\nEnjoying spa treatments and leisure time."
+    },
+    {
+      "day": "Day 04",
+      "description": "Friendly Tournament\nParticipating in a friendly golf tournament."
+    },
+    {
+      "day": "Day 05",
+      "description": "Farewell and Departure\nEnding the golfing retreat."
+    }
+  ],
+  "max_people": 4,
+  "spot_name": "Pebble Beach, California",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/wYdKVj8.jpg",
+    "https://i.imgur.com/kfCfKns.jpg",
+    "https://i.imgur.com/smh5T1y.jpg"
+  ]
+},
+{
+  "title": "Chittagong Hill Tracts Bike Trail",
+  "type": "sports",
+  "price": 200,
+  "guide_name": " Rahim Khan",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Bike Setup and Orientation\nPreparing for the biking trail."
+    },
+    {
+      "day": "Day 02",
+      "description": "Mountain Biking Adventure\nExploring the scenic trails of Chittagong Hill Tracts."
+    },
+    {
+      "day": "Day 03",
+      "description": "Cultural Visits\nInteracting with local tribes and experiencing their culture."
+    },
+    {
+      "day": "Day 04",
+      "description": "Waterfall Exploration\nDiscovering hidden waterfalls in the hills."
+    },
+    {
+      "day": "Day 05",
+      "description": "Conclusion and Departure\nEnding the biking expedition."
+    }
+  ],
+  "max_people": 8,
+  "spot_name": "Chittagong Hill Tracts, Bangladesh",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/Kecaokk.jpg",
+    "https://i.imgur.com/GQ5QN9Z.jpg",
+    "https://i.imgur.com/OLm7Ca5.jpg"
+  ]
+},
+{
+  "title": "Coral Reef Exploration in the Bay of Bengal",
+  "type": "sports",
+  "price": 300,
+  "guide_name": "Rajesh Thapa",
+  "tour_plan": [
+    {
+      "day": "Day 01",
+      "description": "Introduction to Scuba Diving\nOrientation and basic diving lessons."
+    },
+    {
+      "day": "Day 02",
+      "description": "Dive Sessions\nExploring vibrant coral reefs and marine life."
+    },
+    {
+      "day": "Day 03",
+      "description": "Advanced Diving and Night Dive\nVenturing deeper and experiencing a night dive."
+    },
+    {
+      "day": "Day 04",
+      "description": "Relaxation and Beach Activities\nEnjoying beach sports and leisure time."
+    },
+    {
+      "day": "Day 05",
+      "description": "Farewell and Departure\nEnding the diving adventure."
+    }
+  ],
+  "max_people": 6,
+  "spot_name": "Bay of Bengal, Bangladesh",
+  "days": 5,
+  "photos": [
+    "https://i.imgur.com/4DSFOO7.jpg",
+    "https://i.imgur.com/xWVr83P.jpg",
+    "https://i.imgur.com/cXav2yo.jpg"
+  ]
+}
+]
+

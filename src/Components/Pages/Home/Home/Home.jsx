@@ -1,13 +1,14 @@
 /* eslint-disable no-unused-vars */
 import Banner from "../Banner/Banner";
+import Features from "../Features/Features";
 
 
 
 const Home = () => {
     return (
         <div className="">
+           <Features/>
            
-            <h2 className="text-3xl ">This is home</h2>
         </div>
     );
 };

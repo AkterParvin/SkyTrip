@@ -33,7 +33,7 @@ const Nav = () => {
         <li><Link to="/blogs">Bolgs</Link></li>
         <li><Link to="/contact">Contact</Link></li> */}
         <li>
-            <Link to="/" className="mr-1 relative px-3 py-2 overflow-hidden font-medium text-gray-600 bg-transparent border border-gray-100 rounded-lg shadow-inner group">
+            <Link to="/" className="mr-2 relative px-3 py-2 overflow-hidden font-medium text-white bg-transparentrounded-lg shadow-inner group">
             <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
             <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
             <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
@@ -43,7 +43,7 @@ const Nav = () => {
         </Link>
         </li>
         <li>
-            <Link to="/blogs" className="mr-1 relative px-3 py-2 overflow-hidden font-medium text-gray-600 bg-transparent border border-gray-100 rounded-lg shadow-inner group">
+            <Link to="/blogs" className="mr-2 relative px-3 py-2 overflow-hidden font-medium text-white bg-transparent  rounded-lg shadow-inner group">
             <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
             <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
             <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
@@ -53,7 +53,7 @@ const Nav = () => {
         </Link>
         </li>
         <li>
-            <Link to="/" className="relative mr-1 px-3 py-2 overflow-hidden font-medium text-gray-600 bg-transparent border border-gray-100 rounded-lg shadow-inner group">
+            <Link to="/" className="relative mr-2 px-3 py-2 overflow-hidden font-medium text-white bg-transparent rounded-lg shadow-inner group">
             <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
             <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
             <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
@@ -63,7 +63,7 @@ const Nav = () => {
         </Link>
         </li>
         <li>
-            <Link to="/" className="relative  px-3 py-2 overflow-hidden font-medium text-gray-600 bg-transparent border border-gray-100 rounded-lg shadow-inner group">
+            <Link to="/" className="relative  px-3 py-2 overflow-hidden font-medium text-white bg-transparent  rounded-lg shadow-inner group">
             <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
             <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
             <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
@@ -94,7 +94,7 @@ const Nav = () => {
     }, []);
 
     return (
-        <div className={`${color ? "bg-[#eec7b3] transform duration-1000 " : "bg-[#f7f2f0] transform duration-1000  "
+        <div className={`${color ? "bg-[#f2a79c] transform duration-1000 " : "bg-gray-800/60 transform duration-1000  "
             } sticky top-0 z-30 border-gray-200 dark:bg-gray-900 h-[80px] transition-all duration-300 ease-in-out `}>
 
             <div className="navbar max-w-6xl mx-auto">
@@ -109,8 +109,8 @@ const Nav = () => {
                     </div>
                     <Link to="/">
                         <span className="flex items-center justify-center gap-1">
-                            <img src="logo.png" alt="" className="h-9 " />
-                            <h2 className="text-xl font-semibold">SkyTrip</h2>
+                            <img src="logo.png" alt="" className={`${color ? "bg-gray-600" : "bg-gray-100"} h-9 rounded-md m-1`} />
+                            <h2 className={`${color ? "text-gray-700" : "text-white"} text-xl font-semibold `}>SkyTrip</h2>
                         </span>
                     </Link>
                 </div>
