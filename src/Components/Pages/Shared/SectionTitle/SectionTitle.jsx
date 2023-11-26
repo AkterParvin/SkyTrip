@@ -16,3 +16,14 @@ SectionTitle.propTypes = {
 }
 
 export default SectionTitle;
+//  sports(4),hiking(5),wildlife(4),honeymoon(4),airrides(4),seabeach(4),camping(3),boatriding(4),historical(3)
+//**
+
+
+
+//
+
+
+
+//
+   

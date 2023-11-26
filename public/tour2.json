@@ -1,8 +1,9 @@
 [
 {
   "title": "Historical Tour in Edinburgh",
+  "image":"https://i.imgur.com/4fi4N7C.jpg",
   "type": "historical",
-  "price": 200,
+  "price": 5200,
   "guide_name": "Isabella Wright",
   "tour_plan": [
     {
@@ -37,8 +38,9 @@
 },
 {
   "title": "Wildlife Safari",
+  "image":"https://i.imgur.com/cHJQD7Y.jpg",
   "type": "wildlife",
-  "price": 300,
+  "price": 4300,
   "guide_name": "Nikos Georgiou",
   "tour_plan": [
     {
@@ -73,8 +75,9 @@
 },
 {
   "title": "Historical Tour",
+  "image":"https://i.imgur.com/bWbj4UT.jpg",
   "type": "historical",
-  "price": 200,
+  "price": 6200,
   "guide_name": "Nikos Georgiou",
   "tour_plan": [
     {
@@ -109,8 +112,9 @@
 },
 {
   "title": "Mountain Adventure Hike",
+  "image":"https://i.imgur.com/rhmZh7W.jpg",
   "type": "hiking",
-  "price": 300,
+  "price": 4300,
   "guide_name": "David Brute",
   "tour_plan": [
     {
@@ -145,8 +149,9 @@
 },
 {
   "title": "Mountain Hiking Expedition",
+  "image":"https://i.imgur.com/uM6zYlq.jpg",
   "type": "hiking",
-  "price": 250,
+  "price": 3250,
   "guide_name": "Mark Johnson",
   "tour_plan": [
     {
@@ -181,8 +186,9 @@
 },
 {
   "title": "Historical Walking Tour",
-  "type": "walking",
-  "price": 120,
+  "image":"https://i.imgur.com/r2ZJDVs.jpg",
+  "type": "historical",
+  "price": 4120,
   "guide_name": "David Brute",
   "tour_plan": [
     {
@@ -217,8 +223,9 @@
 },
 {
   "title": "Greek Islands Odyssey",
+  "image":"https://i.imgur.com/FIJILxc.jpg",
   "type": "boatriding",
-  "price": 400,
+  "price": 3400,
   "guide_name": "Mark Johnson",
   "tour_plan": [
     {
@@ -253,8 +260,9 @@
 },
 {
   "title": "Amsterdam Canals Discovery",
+  "image":"https://i.imgur.com/MXIREnq.jpg",
   "type": "boatriding",
-  "price": 180,
+  "price": 3180,
   "guide_name": "Mark Johnson",
   "tour_plan": [
     {
@@ -289,8 +297,9 @@
 },
 {
   "title": "Amazon River Adventure",
+  "image":"https://i.imgur.com/2iJaHcL.jpg",
   "type": "boatriding",
-  "price": 500,
+  "price": 3500,
   "guide_name": "David Brute",
   "tour_plan": [
     {
@@ -325,8 +334,9 @@
 },
 {
   "title": "Santorini Sunset Cruise",
+  "image":"https://i.imgur.com/KWO8ywp.jpg",
   "type": "boatriding",
-  "price": 300,
+  "price": 4300,
   "guide_name": "Mark Johnson",
   "tour_plan": [
     {
@@ -361,8 +371,9 @@
 },
 {
   "title": "Redwood Forest Camping Experience",
+  "image":"https://i.imgur.com/fvxXywV.jpg",
   "type": "camping",
-  "price": 300,
+  "price": 5300,
   "guide_name": "Mark Johnson",
   "tour_plan": [
     {
@@ -397,8 +408,9 @@
 },
 {
   "title": "Tranquil Lakeside Camping Retreat",
+  "image":"https://i.imgur.com/GALwp0L.jpg",
   "type": "camping",
-  "price": 320,
+  "price": 5320,
   "guide_name": "Mark Johnson",
   "tour_plan": [
     {
@@ -433,8 +445,9 @@
 },
 {
   "title": "Sahara Dunes: Desert Camping Adventure",
+  "image":"https://i.imgur.com/AOX7Ddu.jpg",
   "type": "camping",
-  "price": 400,
+  "price": 4400,
   "guide_name": "Carlos Rodriguez",
   "tour_plan": [
     {
@@ -469,8 +482,9 @@
 },
 {
   "title": "Family Fun at Cox's Bazar",
+  "image":"https://i.imgur.com/bvXnrUn.jpg",
   "type": "seabeach",
-  "price": 220,
+  "price": 5220,
   "guide_name": "Rahul Das ",
   "tour_plan": [
     {
@@ -505,8 +519,9 @@
 },
 {
   "title": "Romantic Escape: Cox's Bazar Retreat",
+  "image":"https://i.imgur.com/UoJYjb9.jpg",
   "type": "seabeach",
-  "price": 300,
+  "price": 5300,
   "guide_name": "Rahul Das",
   "tour_plan": [
     {
@@ -541,8 +556,9 @@
 },
 {
   "title": "Thrilling Seaside Adventures in Cox's Bazar",
+  "image":"https://i.imgur.com/O9bQvor.jpg",
   "type": "seabeach",
-  "price": 250,
+  "price": 3250,
   "guide_name": "Rahul Das",
   "tour_plan": [
     {
@@ -577,8 +593,9 @@
 },
 {
   "title": "Sunset Serenity at Cox's Bazar",
+  "image":"https://i.imgur.com/kcqBIqU.jpg",
   "type": "seabeach",
-  "price": 180,
+  "price": 3180,
   "guide_name": "Rahul Das",
   "tour_plan": [
     {
@@ -613,6 +630,7 @@
 },
 {
   "title": "Luxury Private Jet Tour",
+  "image":"https://i.imgur.com/fknhmQd.jpg",
   "type": "airrides",
   "price": 15000,
   "guide_name": "Nikos Georgiou",
@@ -649,8 +667,9 @@
 },
 {
   "title": "Dubai Skydiving Thrill",
+  "image":"https://i.imgur.com/lUctwd1.jpg",
   "type": "airrides",
-  "price": 600,
+  "price": 7600,
   "guide_name": "Nikos Georgiou",
   "tour_plan": [
     {
@@ -685,8 +704,9 @@
 },
 {
   "title": "Grand Canyon Helicopter Experience",
+  "image":"https://i.imgur.com/MQYDYxA.jpg",
   "type": "airrides",
-  "price": 450,
+  "price": 9450,
   "guide_name": "Nikos Georgiou",
   "tour_plan": [
     {
@@ -721,8 +741,9 @@
 },
 {
   "title": "Sunrise Hot Air Balloon Flight",
+  "image":"https://i.imgur.com/gYjVKK7.jpg",
   "type": "airrides",
-  "price": 300,
+  "price": 8300,
   "guide_name": "Sophie Berg",
   "tour_plan": [
     {
@@ -757,8 +778,9 @@
 },
 {
   "title": "Charm of Paris Honeymoon",
+  "image":"https://i.imgur.com/3I4b3NT.jpg",
   "type": "honeymoon",
-  "price": 1200,
+  "price": 8200,
   "guide_name": "Sophie Berg",
   "tour_plan": [
     {
@@ -793,8 +815,9 @@
 },
 {
   "title": "Enchanting Santorini Honeymoon",
+  "image":"https://i.imgur.com/Ow5JUp2.jpg",
   "type": "honeymoon",
-  "price": 1000,
+  "price": 10000,
   "guide_name": "Sophie Berg",
   "tour_plan": [
     {
@@ -829,8 +852,9 @@
 },
 {
   "title": "Romantic Journey: Dhaka & Cox's Bazar",
+  "image":"https://i.imgur.com/T3xcNB4.jpg",
   "type": "honeymoon",
-  "price": 600,
+  "price": 5600,
   "guide_name": "Rahim Khan",
   "tour_plan": [
     {
@@ -865,8 +889,9 @@
 },
 {
   "title": "Exotic Bali Honeymoon",
+  "image":"https://i.imgur.com/YCORlMM.jpg",
   "type": "honeymoon",
-  "price": 800,
+  "price": 12800,
   "guide_name": "Sophie Berg",
   "tour_plan": [
     {
@@ -901,8 +926,9 @@
 },
 {
   "title": "Exploring Sundarbans Wildlife",
+  "image":"https://i.imgur.com/FeImHVY.jpg",
   "type": "wildlife",
-  "price": 300,
+  "price": 4300,
   "guide_name": "Rajesh Thapa",
   "tour_plan": [
     {
@@ -937,8 +963,9 @@
 },
 {
   "title": "Chitwan Wildlife Safari",
+  "image":"https://i.imgur.com/T6BdsdJ.jpg",
   "type": "wildlife",
-  "price": 250,
+  "price": 6250,
   "guide_name": "Rajesh Thapa",
   "tour_plan": [
     {
@@ -973,8 +1000,9 @@
 },
 {
   "title": "African Wilderness Safari",
+  "image":"https://i.imgur.com/ZrVuLU1.jpg",
   "type": "wildlife",
-  "price": 500,
+  "price": 9500,
   "guide_name": "David Brute",
   "tour_plan": [
     {
@@ -1007,46 +1035,12 @@
     "https://i.imgur.com/JhKJ2i3.jpg"
   ]
 },
-{
-  "title": "Amazon Rainforest Wildlife Adventure",
-  "type": "wildlife",
-  "price": 400,
-  "guide_name": "David Brute",
-  "tour_plan": [
-    {
-      "day": "Day 01",
-      "description": "Arrival and Introduction to the Amazon\nEnter the world's largest tropical rainforest."
-    },
-    {
-      "day": "Day 02",
-      "description": "River Cruise and Pink Dolphin Sighting\nNavigate the river and spot unique wildlife."
-    },
-    {
-      "day": "Day 03",
-      "description": "Night Jungle Safari\nExplore nocturnal creatures in the jungle."
-    },
-    {
-      "day": "Day 04",
-      "description": "Indigenous Community Visit\nInteract with local tribes and learn their culture."
-    },
-    {
-      "day": "Day 05",
-      "description": "Farewell and Departure\nBid adieu to the Amazon Rainforest."
-    }
-  ],
-  "max_people": 15,
-  "spot_name": "Amazon Rainforest",
-  "days": 5,
-  "photos": [
-    "https://i.imgur.com/DZs2RNv.jpg",
-    "https://i.imgur.com/wAlOy8M.jpg",
-    "https://i.imgur.com/znFWXj1.jpg"
-  ]
-},
+
 {
   "title": "Inca Trail to Machu Picchu",
+  "image":"https://i.imgur.com/LxLX6TA.jpg",
   "type": "hiking",
-  "price": 500,
+  "price": 12500,
   "guide_name": "Carlos Rodriguez",
   "tour_plan": [
     {
@@ -1081,8 +1075,9 @@
 },
 {
   "title": "Rocky Mountain Summit Quest",
+  "image":"https://i.imgur.com/6qTw2Cx.jpg",
   "type": "hiking",
-  "price": 300,
+  "price": 21300,
   "guide_name": "Carlos Rodriguez",
   "tour_plan": [
     {
@@ -1117,8 +1112,9 @@
 },
 {
   "title": "Chittagong Hill Tracts Adventure",
+  "image":"https://i.imgur.com/OLm7Ca5.jpg",
   "type": "hiking",
-  "price": 220,
+  "price": 3220,
   "guide_name": "Rajesh Thapa",
   "tour_plan": [
     {
@@ -1153,8 +1149,9 @@
 },
 {
   "title": "Sundarbans Jungle Trek",
+  "image":"https://i.imgur.com/LuRFTht.jpg",
   "type": "hiking",
-  "price": 180,
+  "price": 3180,
   "guide_name": " Rajesh Thapa",
   "tour_plan": [
     {
@@ -1189,8 +1186,9 @@
 },
 {
   "title": "Professional Tennis Camp in Barcelona",
+  "image":"https://i.imgur.com/Zt1Jzuq.jpg",
   "type": "sports",
-  "price": 400,
+  "price": 8400,
   "guide_name": "Isabella Wright",
   "tour_plan": [
     {
@@ -1225,8 +1223,9 @@
 },
 {
   "title": "Luxury Golfing at Pebble Beach",
+  "image":"https://i.imgur.com/iehZ03g.jpg",
   "type": "sports",
-  "price": 500,
+  "price": 17500,
   "guide_name": " Isabella Wright",
   "tour_plan": [
     {
@@ -1261,8 +1260,9 @@
 },
 {
   "title": "Chittagong Hill Tracts Bike Trail",
+  "image":"https://i.imgur.com/eEnmMjr.jpg",
   "type": "sports",
-  "price": 200,
+  "price": 5200,
   "guide_name": " Rahim Khan",
   "tour_plan": [
     {
@@ -1297,8 +1297,9 @@
 },
 {
   "title": "Coral Reef Exploration in the Bay of Bengal",
+  "image":"https://i.imgur.com/nnDd1bO.jpg",
   "type": "sports",
-  "price": 300,
+  "price": 4300,
   "guide_name": "Rajesh Thapa",
   "tour_plan": [
     {
