@@ -61,7 +61,7 @@ const TabSection = () => {
                 <Tabs selectedIndex={tabIndex} onSelect={handleTabIndex}>
                     <TabList className='text-[#E8604C] border border-red-950 flex items-center justify-center '>
                         <Tab>
-                            <a href="#_" className="relative inline-flex items-center justify-start py-1 px-2 overflow-hidden font-semibold text-[#E8604C] transition-all duration-150 ease-in-out rounded hover:pl-2 hover:pr-2 bg-gray-50 group">
+                            <a  className="relative inline-flex items-center justify-start py-1 px-2 overflow-hidden font-semibold text-[#E8604C] transition-all duration-150 ease-in-out rounded hover:pl-2 hover:pr-2 bg-gray-50 group">
                                 <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-[#E8604C] group-hover:h-full">
 
                                 </span>
@@ -73,7 +73,7 @@ const TabSection = () => {
                             </a>
                         </Tab>
                         <Tab>
-                        <a href="#_" className="relative inline-flex items-center justify-start py-1 px-2 overflow-hidden font-semibold text-[#E8604C] transition-all duration-150 ease-in-out rounded hover:px-2 bg-gray-50 group">
+                        <a  className="relative inline-flex items-center justify-start py-1 px-2 overflow-hidden font-semibold text-[#E8604C] transition-all duration-150 ease-in-out rounded hover:px-2 bg-gray-50 group">
                             <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-[#E8604C] group-hover:h-full">    
                             </span>
                                 <span className="relative w-full  text-xs md:text-base transition-colors duration-200 ease-in-out group-hover:text-white">
@@ -83,7 +83,7 @@ const TabSection = () => {
                             
                         </Tab>
                         <Tab>
-                            <a href="#_" className="relative inline-flex items-center justify-start py-1 px-2 overflow-hidden font-semibold text-[#E8604C] transition-all duration-150 ease-in-out rounded hover:pl-2 hover:pr-2 bg-gray-50 group">
+                            <a  className="relative inline-flex items-center justify-start py-1 px-2 overflow-hidden font-semibold text-[#E8604C] transition-all duration-150 ease-in-out rounded hover:pl-2 hover:pr-2 bg-gray-50 group">
                                 <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-[#E8604C] group-hover:h-full">
                                 </span>
                                 <span className="relative w-full text-xs md:text-base transition-colors duration-200 ease-in-out group-hover:text-white">

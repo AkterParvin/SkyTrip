@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import TourCard from "./TourCard";
 import useTours from "../../../Shared/Hooks/useTours";
@@ -17,7 +18,7 @@ const AllTours = () => {
     };
 
     const filteredTours = tours.filter(tour => {
-        return tour.title.toLowerCase().includes(searchQuery.toLowerCase()) 
+        return tour.title.toLowerCase().includes(searchQuery.toLowerCase())
     })
 
     useEffect(() => {
@@ -99,9 +100,7 @@ const AllTours = () => {
                         <TourCard
                             key={tour._id}
                             tour={tour}
-
                         >
-
                         </TourCard>)}
                 </div>
             </div>

@@ -5,6 +5,8 @@
   "type": "historical",
   "price": 5200,
   "guide_name": "Isabella Wright",
+  "guide_email":"isabella@gmail.com",
+  "guide_pic":"https://i.imgur.com/YKrZ7gz.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -42,6 +44,8 @@
   "type": "wildlife",
   "price": 4300,
   "guide_name": "Nikos Georgiou",
+  "guide_email":"nikos@gmail.com",
+  "guide_pic":"https://i.imgur.com/UauMBVT.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -79,6 +83,8 @@
   "type": "historical",
   "price": 6200,
   "guide_name": "Nikos Georgiou",
+  "guide_email":"nikos@gmail.com",
+  "guide_pic":"https://i.imgur.com/UauMBVT.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -116,6 +122,8 @@
   "type": "hiking",
   "price": 4300,
   "guide_name": "David Brute",
+  "guide_email":"david@gmail.com",
+  "guide_pic":"https://i.imgur.com/9rwxtCG.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -153,6 +161,8 @@
   "type": "hiking",
   "price": 3250,
   "guide_name": "Mark Johnson",
+  "guide_email":"mark@gmail.com",
+  "guide_pic":"https://i.imgur.com/x2122ok.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -190,6 +200,8 @@
   "type": "historical",
   "price": 4120,
   "guide_name": "David Brute",
+  "guide_email":"david@gmail.com",
+  "guide_pic":"https://i.imgur.com/9rwxtCG.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -227,6 +239,8 @@
   "type": "boatriding",
   "price": 3400,
   "guide_name": "Mark Johnson",
+  "guide_email":"mark@gmail.com",
+  "guide_pic":"https://i.imgur.com/x2122ok.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -264,6 +278,8 @@
   "type": "boatriding",
   "price": 3180,
   "guide_name": "Mark Johnson",
+  "guide_email":"mark@gmail.com",
+  "guide_pic":"https://i.imgur.com/x2122ok.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -301,6 +317,8 @@
   "type": "boatriding",
   "price": 3500,
   "guide_name": "David Brute",
+  "guide_email":"david@gmail.com",
+  "guide_pic":"https://i.imgur.com/9rwxtCG.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -338,6 +356,8 @@
   "type": "boatriding",
   "price": 4300,
   "guide_name": "Mark Johnson",
+  "guide_email":"mark@gmail.com",
+  "guide_pic":"https://i.imgur.com/x2122ok.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -375,6 +395,8 @@
   "type": "camping",
   "price": 5300,
   "guide_name": "Mark Johnson",
+  "guide_email":"mark@gmail.com",
+  "guide_pic":"https://i.imgur.com/x2122ok.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -411,7 +433,9 @@
   "image":"https://i.imgur.com/GALwp0L.jpg",
   "type": "camping",
   "price": 5320,
-  "guide_name": "Mark Johnson",
+  "guide_name": "Carlos Rodriguez",
+  "guide_email":"carlos@gmail.com",
+  "guide_pic":"https://i.imgur.com/PDG2cQf.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -449,6 +473,8 @@
   "type": "camping",
   "price": 4400,
   "guide_name": "Carlos Rodriguez",
+  "guide_email":"carlos@gmail.com",
+  "guide_pic":"https://i.imgur.com/PDG2cQf.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -485,7 +511,9 @@
   "image":"https://i.imgur.com/bvXnrUn.jpg",
   "type": "seabeach",
   "price": 5220,
-  "guide_name": "Rahul Das ",
+  "guide_name": "Rahul Das",
+  "guide_email":"rahul@gmail.com",
+  "guide_pic":"https://i.imgur.com/qflCtnl.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -523,6 +551,8 @@
   "type": "seabeach",
   "price": 5300,
   "guide_name": "Rahul Das",
+  "guide_email":"rahul@gmail.com",
+  "guide_pic":"https://i.imgur.com/qflCtnl.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -560,6 +590,8 @@
   "type": "seabeach",
   "price": 3250,
   "guide_name": "Rahul Das",
+  "guide_email":"rahul@gmail.com",
+  "guide_pic":"https://i.imgur.com/qflCtnl.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -597,6 +629,8 @@
   "type": "seabeach",
   "price": 3180,
   "guide_name": "Rahul Das",
+  "guide_email":"rahul@gmail.com",
+  "guide_pic":"https://i.imgur.com/qflCtnl.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -634,6 +668,8 @@
   "type": "airrides",
   "price": 15000,
   "guide_name": "Nikos Georgiou",
+  "guide_email":"nikos@gmail.com",
+  "guide_pic":"https://i.imgur.com/UauMBVT.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -671,6 +707,8 @@
   "type": "airrides",
   "price": 7600,
   "guide_name": "Nikos Georgiou",
+  "guide_email":"nikos@gmail.com",
+  "guide_pic":"https://i.imgur.com/UauMBVT.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -708,6 +746,8 @@
   "type": "airrides",
   "price": 9450,
   "guide_name": "Nikos Georgiou",
+  "guide_email":"nikos@gmail.com",
+  "guide_pic":"https://i.imgur.com/UauMBVT.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -745,6 +785,8 @@
   "type": "airrides",
   "price": 8300,
   "guide_name": "Sophie Berg",
+  "guide_email":"sophie@gmail.com",
+  "guide_pic":"https://i.imgur.com/iW8EV0A.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -782,6 +824,8 @@
   "type": "honeymoon",
   "price": 8200,
   "guide_name": "Sophie Berg",
+  "guide_email":"sophie@gmail.com",
+  "guide_pic":"https://i.imgur.com/iW8EV0A.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -819,6 +863,8 @@
   "type": "honeymoon",
   "price": 10000,
   "guide_name": "Sophie Berg",
+  "guide_email":"sophie@gmail.com",
+  "guide_pic":"https://i.imgur.com/iW8EV0A.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -856,6 +902,8 @@
   "type": "honeymoon",
   "price": 5600,
   "guide_name": "Rahim Khan",
+  "guide_email":"rahim@gmail.com",
+  "guide_pic":"https://i.imgur.com/RUXiWcS.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -893,6 +941,8 @@
   "type": "honeymoon",
   "price": 12800,
   "guide_name": "Sophie Berg",
+  "guide_email":"sophie@gmail.com",
+  "guide_pic":"https://i.imgur.com/iW8EV0A.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -930,6 +980,8 @@
   "type": "wildlife",
   "price": 4300,
   "guide_name": "Rajesh Thapa",
+  "guide_email":"rajesh@gmail.com",
+  "guide_pic":"https://i.imgur.com/b9TCO9q.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -967,6 +1019,8 @@
   "type": "wildlife",
   "price": 6250,
   "guide_name": "Rajesh Thapa",
+  "guide_email":"rajesh@gmail.com",
+  "guide_pic":"https://i.imgur.com/b9TCO9q.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -1004,6 +1058,8 @@
   "type": "wildlife",
   "price": 9500,
   "guide_name": "David Brute",
+  "guide_email":"david@gmail.com",
+  "guide_pic":"https://i.imgur.com/9rwxtCG.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -1042,6 +1098,8 @@
   "type": "hiking",
   "price": 12500,
   "guide_name": "Carlos Rodriguez",
+  "guide_email":"carlos@gmail.com",
+  "guide_pic":"https://i.imgur.com/PDG2cQf.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -1079,6 +1137,8 @@
   "type": "hiking",
   "price": 21300,
   "guide_name": "Carlos Rodriguez",
+  "guide_email":"carlos@gmail.com",
+  "guide_pic":"https://i.imgur.com/PDG2cQf.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -1116,6 +1176,8 @@
   "type": "hiking",
   "price": 3220,
   "guide_name": "Rajesh Thapa",
+  "guide_email":"rajesh@gmail.com",
+  "guide_pic":"https://i.imgur.com/b9TCO9q.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -1152,7 +1214,9 @@
   "image":"https://i.imgur.com/LuRFTht.jpg",
   "type": "hiking",
   "price": 3180,
-  "guide_name": " Rajesh Thapa",
+  "guide_name": "Rajesh Thapa",
+  "guide_email":"rajesh@gmail.com",
+  "guide_pic":"https://i.imgur.com/b9TCO9q.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -1190,6 +1254,8 @@
   "type": "sports",
   "price": 8400,
   "guide_name": "Isabella Wright",
+  "guide_email":"isabella@gmail.com",
+  "guide_pic":"https://i.imgur.com/YKrZ7gz.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -1226,7 +1292,9 @@
   "image":"https://i.imgur.com/iehZ03g.jpg",
   "type": "sports",
   "price": 17500,
-  "guide_name": " Isabella Wright",
+  "guide_name": "Isabella Wright",
+  "guide_email":"isabella@gmail.com",
+  "guide_pic":"https://i.imgur.com/YKrZ7gz.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -1263,7 +1331,9 @@
   "image":"https://i.imgur.com/eEnmMjr.jpg",
   "type": "sports",
   "price": 5200,
-  "guide_name": " Rahim Khan",
+  "guide_name": "Rahim Khan",
+  "guide_email":"rahim@gmail.com",
+  "guide_pic":"https://i.imgur.com/RUXiWcS.jpg",
   "tour_plan": [
     {
       "day": "Day 01",
@@ -1300,7 +1370,9 @@
   "image":"https://i.imgur.com/nnDd1bO.jpg",
   "type": "sports",
   "price": 4300,
-  "guide_name": "Rajesh Thapa",
+  "guide_name": "Rahim Khan",
+  "guide_email":"rahim@gmail.com",
+  "guide_pic":"https://i.imgur.com/RUXiWcS.jpg",
   "tour_plan": [
     {
       "day": "Day 01",

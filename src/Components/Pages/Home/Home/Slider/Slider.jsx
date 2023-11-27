@@ -19,9 +19,12 @@ import 'swiper/css/pagination';
 // import { EffectFade, Navigation, Pagination } from 'swiper/modules';
 
 import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules';
+import useTours from '../../../Shared/Hooks/useTours';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Slider = () => {
-    
+  
  
     return (
         <div className='w-full mx-auto  mb-16 bg-gray-100/20 rounded-xl px-3 md:px-6 shadow-xl'>
@@ -39,31 +42,33 @@ const Slider = () => {
                 className="mySwiper"
             >
                 <SwiperSlide className='h-28 bg-transparent py-12 uppercase'>
-                    <button className='w-full py-8 md:py-12 rounded-full uppercase bg-[#fff1ec] font-semibold  text-xs md:text-base'>camping</button>
+                    <Link to={'/tour/camping'}><button className='w-full py-8 md:py-12 rounded-full uppercase bg-[#fff1ec] font-semibold  text-xs md:text-base'>camping</button></Link>
                 </SwiperSlide>
                 <SwiperSlide className='h-28 bg-transparent py-12 '>
-                    <button className='w-full py-8 md:py-12 rounded-full uppercase bg-[#fff1ec] font-semibold  text-xs md:text-base'>boatriding</button>
+                    <Link to={'/tour/boatriding'}><button className='w-full py-8 md:py-12 rounded-full uppercase bg-[#fff1ec] font-semibold  text-xs md:text-base'>boatriding</button></Link>
                 </SwiperSlide>
                 <SwiperSlide className='h-28 bg-transparent py-12 uppercase'>
-                    <button className='w-full py-8 md:py-12 rounded-full uppercase bg-[#fff1ec] font-semibold  text-xs md:text-base'>seabeach</button>
+                    <Link to={'/tour/seabeach'}><button className='w-full py-8 md:py-12 rounded-full uppercase bg-[#fff1ec] font-semibold  text-xs md:text-base'>seabeach</button></Link>
                 </SwiperSlide>
                 <SwiperSlide className='h-28 bg-transparent py-12 uppercase'>
-                    <button className='w-full py-8 md:py-12 rounded-full uppercase bg-[#fff1ec] font-semibold  text-xs md:text-base'>airrides</button>
+                    <Link to={'/tour/airrides'}><button className='w-full py-8 md:py-12 rounded-full uppercase bg-[#fff1ec] font-semibold  text-xs md:text-base'>airrides</button></Link>
                 </SwiperSlide>
                 <SwiperSlide className='h-28 bg-transparent py-12 uppercase'>
-                    <button className='w-full py-8 md:py-12 rounded-full uppercase bg-[#fff1ec] font-semibold  text-xs md:text-base'>historical</button>
+                    <Link to={'/tour/historical'}><button className='w-full py-8 md:py-12 rounded-full uppercase bg-[#fff1ec] font-semibold  text-xs md:text-base'>historical</button></Link>
                 </SwiperSlide>
                 <SwiperSlide className='h-28 bg-transparent py-12 uppercase'>
-                    <button className='w-full py-8 md:py-12 rounded-full uppercase bg-[#fff1ec] font-semibold  text-xs md:text-base'>honeymoon</button>
+                    <Link to={'/tour/honeymoon'}><button className='w-full py-8 md:py-12 rounded-full uppercase bg-[#fff1ec] font-semibold  text-xs md:text-base'>honeymoon</button></Link>
                 </SwiperSlide>
                 <SwiperSlide className=' bg-transparent py-12 uppercase'>
-                    <button className='w-full py-8 md:py-12 rounded-full uppercase bg-[#fff1ec] font-semibold  text-xs md:text-base'>WildLife</button>
+                    <Link to={'/tour/wildlife'}><button className='w-full py-8 md:py-12 rounded-full uppercase bg-[#fff1ec] font-semibold  text-xs md:text-base'>wildlife</button></Link>
                 </SwiperSlide>
                 <SwiperSlide className='h-28 bg-transparent py-12 uppercase'>
-                    <button className='w-full py-8 md:py-12 rounded-full uppercase bg-[#fff1ec] font-semibold  text-xs md:text-base'>hiking</button>
+                    <Link to={'/tour/hiking'}><button className='w-full py-8 md:py-12 rounded-full uppercase bg-[#fff1ec] font-semibold  text-xs md:text-base'>hiking</button>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide className='h-28 bg-transparent py-12 uppercase'>
-                    <button className='w-full py-8 md:py-12 rounded-full uppercase bg-[#fff1ec] font-semibold  text-xs md:text-base'>Sports</button>
+                    <Link to={'/tour/sports'}><button className='w-full py-8 md:py-12 rounded-full uppercase bg-[#fff1ec] font-semibold  text-xs md:text-base'>sports</button>
+                    </Link>
                 </SwiperSlide>
                 
                 

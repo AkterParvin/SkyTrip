@@ -10,7 +10,7 @@ const TourSection = () => {
 
     const [showAll, setShowAll] = useState(true);
     const [tours] = useTours(showAll);
-   
+
     const location = useLocation();
     const [allTours, setAllTours] = useState(false);
     const displayTours = location.pathname === "/alltours" || allTours ? tours : tours.slice(0, 4);
@@ -32,11 +32,11 @@ const TourSection = () => {
                         {
                             displayTours.map(tour => <TourCard key={tour._id}
                                 tour={tour}>
-                                
-                                </TourCard>)
+
+                            </TourCard>)
                         }
                     </div>
-                
+
                 </div>
                 {
                     location.pathname === "/" && !allTours ?

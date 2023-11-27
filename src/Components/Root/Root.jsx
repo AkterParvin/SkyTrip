@@ -17,8 +17,9 @@ const Root = () => {
 
     // };
     const location = useLocation()
+    const bgClass = location.pathname === "/" ? "bg-blue-100" : "bg-[#fff1ec]";
     return (
-        <div >
+        <div className={bgClass}>
             <Nav />
             {location.pathname === '/' ?
                 <> <Banner />
@@ -32,12 +33,12 @@ const Root = () => {
 
                     </div>
                 </> :
-                <div className="h-[50vh]">
+                <div className="h-[50vh] ">
                     <SecondBanner />
                 </div>
             }
             
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-6xl mx-auto ">
                 <Outlet />
             </div>
          

@@ -47,34 +47,34 @@ const SecondBanner = () => {
             >
                 <SwiperSlide >
                     <div className='h-[50vh] w-full flex justify-center gap-4 items-center'>
-                        <img src='bg2.jpg' className='h-full w-1/3' />
-                        <img src='bg7.jpg' className='h-full w-1/3' />
-                        <img src='bg8.jpg' className='h-full w-1/3' />
+                        <img src='/bg2.jpg' className='h-full w-1/3' />
+                        <img src='/bg7.jpg' className='h-full w-1/3' />
+                        <img src='/bg8.jpg' className='h-full w-1/3' />
                     </div>
 
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='h-[50vh] w-full flex justify-center gap-4 items-center'>
-                        <img src='bg9.jpg' className='h-full w-1/3' />
-                        <img src='bg10.jpg' className='h-full w-1/3' />
-                        <img src='bg11.jpg' className='h-full w-1/3' />
+                        <img src='/bg9.jpg' className='h-full w-1/3' />
+                        <img src='/bg10.jpg' className='h-full w-1/3' />
+                        <img src='/bg11.jpg' className='h-full w-1/3' />
                     </div>
 
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='h-[50vh] w-full flex justify-center gap-4 items-center '>
-                        <img src='bg12.jpg' className='h-full w-1/3' />
-                        <img src='bg13.jpg' className='h-full w-1/3' />
-                        <img src='bg14.jpg' className='h-full w-1/3 ' />
+                        <img src='/bg12.jpg' className='h-full w-1/3' />
+                        <img src='/bg13.jpg' className='h-full w-1/3' />
+                        <img src='/bg14.jpg' className='h-full w-1/3 ' />
                        
                     </div>
 
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='h-[50vh] w-full flex justify-center gap-4 items-center '>
-                        <img src='bg15.jpg' className='h-full w-1/3' />
-                        <img src='bg16.jpg' className='h-full w-1/3' />
-                        <img src='bg17.jpg' className='h-full w-1/3 ' />
+                        <img src='/bg15.jpg' className='h-full w-1/3' />
+                        <img src='/bg16.jpg' className='h-full w-1/3' />
+                        <img src='/bg17.jpg' className='h-full w-1/3 ' />
                        
                     </div>
 
