@@ -9,10 +9,13 @@ import { useContext, useEffect, useState } from "react";
 // import { Avatar, Dropdown, Navbar } from 'flowbite-react';
 import { AuthContext } from "../../../../Provider/AuthProvider";
 import Swal from "sweetalert2";
+import { FaHeart } from "react-icons/fa";
+import useWishlist from "../Hooks/useWishlist";
 
 
 const Nav = () => {
     const { user, logOut } = useContext(AuthContext);
+    const [wishlist, refetch] = useWishlist();
     // const user = true;
     // logout user function 
     const handleLogOut = () => {
@@ -138,6 +141,14 @@ const Nav = () => {
                                 </li>
                                 <li >
                                     <Link className="hover:bg-slate-600 p-1 rounded-lg hover:text-white">Dashboard</Link>
+                                </li>
+                                <li >
+                                    <Link to={"/dashboard/mywishlist"} className="hover:bg-slate-600 p-1 rounded-lg hover:text-white">
+                                        <button className="flex items-center justify-center">
+                                            <p>Wishlist</p>
+                                            <div className="badge badge-sm badge-error">+{wishlist.length}</div>
+                                        </button>
+                                    </Link>
                                 </li>
                                 <li >
                                     <Link className="hover:bg-slate-600 p-1 rounded-lg hover:text-white">Offers</Link>

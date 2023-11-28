@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { IoIosHeart } from "react-icons/io";
 import PropTypes from 'prop-types';
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../../../../Provider/AuthProvider";
 import useAxiosSecure from "../../../Shared/Hooks/useAxiosSecure";
@@ -10,9 +10,13 @@ import useWishlist from "../../../Shared/Hooks/useWishlist";
 
 const TourCard = ({ tour }) => {
     const { user } = useContext(AuthContext)
-    const { title, image, type, price, _id, guide_name } = tour;
+    const { title, image, type, price, _id, guide_name, guide_email, spot_name } = tour;
+    // console.log(_id);
     const axiosSecure = useAxiosSecure();
     const [, refetch] = useWishlist();
+    const navigate = useNavigate();
+    const location = useLocation();
+
     const handleClick = () => {
         if (user && user.email) {
             const wishedTour = {
@@ -22,8 +26,9 @@ const TourCard = ({ tour }) => {
                 image,
                 type,
                 price,
-                guide_name
-
+                guide_name,
+                guide_email,
+                spot_name
             };
             axiosSecure.post("/wishlist", wishedTour)
                 .then(res => {
@@ -33,7 +38,23 @@ const TourCard = ({ tour }) => {
                     }
                 })
         }
-    }
+        else {
+            Swal.fire({
+                title: "You are not Logged In",
+                text: "Please login to add tour to Wishlist",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes, login!"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    //   send the user to the login page
+                    navigate('/login', { state: { from: location } })
+                }
+            });
+        }
+    };
 
     return (
         <div className='lg:w-[90%] mx-auto'>

@@ -146,9 +146,9 @@ const ToursDetails = () => {
                                 </div>
                                 <div className="flex items-center justify-start gap-3 
                                 w-full h-auto overflow-hidden my-5 shadow-xl">
-                                    <img src={photos[0]} alt="" className="h-52 w-[32%] object-cover" />
+                                    {/* <img src={photos[0]} alt="" className="h-52 w-[32%] object-cover" />
                                     <img src={photos[1]} alt="" className="h-52 w-[32%] object-cover" />
-                                    <img src={photos[2]} alt="" className="h-52 w-[32%] object-cover" />
+                                    <img src={photos[2]} alt="" className="h-52 w-[32%] object-cover" /> */}
                                 </div>
                             </div>
                         </div>
@@ -223,18 +223,9 @@ const ToursDetails = () => {
 
                     </div>
                     <div className="h-full w-full mx-auto bg-blue-100 col-span-3">
-                        {/* button booking  */}
-                        <div className="items-center justify-center flex py-5">
-                            <button className="relative inline-flex items-center px-12 py-1 overflow-hidden text-lg font-medium text-white bg-[#E8604C]  border-2 border-[#E8604C] rounded-xl hover:text-gray-900 group hover:bg-[#f8d1cb]">
-                                <span className="absolute left-0 block w-full h-0 transition-all bg-[#f8d1cb] opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
-                                <span className="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
-                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                                </span>
-                                <span className="relative">Booking</span>
-                            </button>
-                        </div>
+                        
                         <div>
-                            <BookingForm/>
+                            <BookingForm tourDetails={tourDetails} />
                         </div>
                     </div>
                 </div>

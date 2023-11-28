@@ -94,7 +94,7 @@ const AllTours = () => {
                 </form>
             </div>
             <div>
-                <div className="grid md:grid-cols-2 gap-8 max-w-4xl  mx-auto my-10 px-2">
+                <div className="grid md:grid-cols-2 gap-5 max-w-5xl  mx-auto my-10 px-2">
 
                     {filteredTours.map(tour =>
                         <TourCard

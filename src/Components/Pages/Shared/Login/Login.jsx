@@ -81,7 +81,7 @@ const Login = () => {
 
                         <div className="w-full px-6 py-8 md:px-8 lg:w-1/2 bg-stone-400/20">
                             <div className="flex justify-center items-center hover:rounded-lg mx-auto hover:bg-[#e3bc9a]/40 hover:text-gray-200 w-[40%]" >
-                                <img className="w-auto h-14  " src="logo.png" alt="" />
+                                <img className="w-auto h-14  " src="/logo.png" alt="" />
 
                             </div>
 
