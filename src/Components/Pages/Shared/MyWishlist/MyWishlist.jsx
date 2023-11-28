@@ -63,8 +63,8 @@ const MyWishlist = () => {
 
                 {
                     wishlist.length > 0 ?
-                        <div style={containerStyle2} className=" flex flex-col max-w-6xl mx-auto mt-12 p-6 space-y-4 sm:p-10 dark:bg-gray-900 dark:text-gray-100 rounded-xl shadow-xl">
-                            <h2 className="text-2xl font-semibold text-center text-blue-600 animate-pulse">My Wishlist</h2>
+                        <div style={containerStyle2} className=" flex flex-col max-w-6xl mx-auto p-6 space-y-4 sm:p-10 dark:bg-gray-900 dark:text-gray-100 rounded-xl shadow-xl">
+                            <h2 className="text-2xl font-semibold text-center text-[#b14434] hover:animate-bounce">My Wishlists</h2>
                             <ul className="flex flex-col divide-y divide-gray-700 ">
                                 {
                                     wishlist.map(tour => <WishlistDetail

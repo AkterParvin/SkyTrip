@@ -204,9 +204,6 @@ const BookingForm = ({ tourDetails }) => {
 
                                     </select>
                                 </div>
-
-
-
                             </div>
 
                             {/* price  */}

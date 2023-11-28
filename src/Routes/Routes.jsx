@@ -10,6 +10,8 @@ import ErrorPage from "../Components/Pages/Shared/ErrorPage/ErrorPage";
 import MyWishlist from "../Components/Pages/Shared/MyWishlist/MyWishlist";
 import Dashboard from "../Components/Root/Dashboard";
 import MyBookings from "../Components/Pages/Dashboard/MyBookings/MyBookings";
+import UserProfile from "../Components/Pages/Dashboard/UserHome/UserProfile";
+import AdminProfile from "../Components/Pages/Dashboard/AdminHome/AdminProfile";
 
 
 const Routes = createBrowserRouter([
@@ -51,6 +53,18 @@ const Routes = createBrowserRouter([
         // errorElement:<ErrorPage/>,
         element:<Dashboard/> ,
         children: [
+            // Admin Routes 
+            {
+                path: "adminprofile",
+                element: <AdminProfile />
+
+            },
+            // user routes 
+            {
+                path: "userprofile",
+                element: <UserProfile />
+
+            },
             {
                 path: "mywishlist",
                 element: <MyWishlist />
@@ -61,6 +75,8 @@ const Routes = createBrowserRouter([
                 element: <MyBookings />
 
             },
+
+
         ]
         
     }

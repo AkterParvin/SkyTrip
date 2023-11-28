@@ -8,13 +8,14 @@ import WishlistDetail from "../../Shared/MyWishlist/WishlistDetail";
 import useAxiosSecure from "../../Shared/Hooks/useAxiosSecure";
 import { useContext } from "react";
 import { AuthContext } from "../../../../Provider/AuthProvider";
+import BookingDetails from "./BookingDetails";
 
 const MyBookings = () => {
     const [bookings, refetch, loading] = useBookings();
     console.log(bookings);
     const axiosSecure = useAxiosSecure();
     const { user } = useContext(AuthContext);
-    const price = bookings.reduce((total, tour) => total + tour.price, 0);
+    const price = bookings?.reduce((total, tour) => total + tour.price, 0);
     const totalPrice = price.toFixed(2);
 
     const handleDelete = id => {
@@ -58,20 +59,20 @@ const MyBookings = () => {
     };
     return (
         <div>
-            <div className=" max-w-6xl">
+            <div className="h-full max-w-6xl">
 
                 {
                     bookings.length > 0 ?
-                        <div style={containerStyle} className=" flex flex-col max-w-6xl mx-auto mt-12 p-6 space-y-4 sm:p-10 dark:bg-gray-900 dark:text-gray-100 rounded-xl shadow-xl">
-                            <h2 className="text-2xl font-semibold text-center text-rose-300 animate-pulse">My Bookings</h2>
+                        <div style={containerStyle} className=" flex flex-col max-w-6xl mx-auto  p-6 space-y-4 sm:p-10 dark:bg-gray-900 dark:text-gray-100 rounded-xl shadow-xl">
+                            <h2 className="text-2xl font-semibold text-center text-[#b14434] hover:animate-bounce">My Bookings</h2>
                             <ul className="flex flex-col divide-y divide-gray-700 ">
                                 {
-                                    bookings.map(tour => <WishlistDetail
+                                    bookings.map(tour => <BookingDetails
                                         key={tour._id}
                                         tour={tour}
                                         handleDelete={handleDelete}
 
-                                    ></WishlistDetail>)
+                                    ></BookingDetails>)
                                 }
 
 
