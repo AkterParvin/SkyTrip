@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import bg2 from '../../../../../public/17.png'
 import { useForm } from "react-hook-form";
 import { Helmet } from "react-helmet-async";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 import Swal from "sweetalert2";
 // import SocialLogin from "../Shared/SocialLogin/SocialLogin";
@@ -20,6 +20,7 @@ const Signup = () => {
     const { createUser, updateUserProfile } = useContext(AuthContext);
     const axiosPublic = useAxiosPublic();
     const navigate = useNavigate();
+    const [error, setError] = useState("");
 
     const onSubmit = (data) => {
         
@@ -60,6 +61,7 @@ const Signup = () => {
             })
             .catch(error => {
                 console.log(error.message);
+                setError(error.message);
             })
     };
 
@@ -90,8 +92,10 @@ const Signup = () => {
                         </div>
 
                         <form onSubmit={handleSubmit(onSubmit)}>
-
-                            <div className="relative z-0 w-full mb-6 group mt-4">
+                            {error && <span className="text-sm my-2 font-semibold text-red-700">
+                                {error}
+                            </span>}
+                            <div className="relative z-0 w-full my-6 group mt-4">
                                 <input
                                     type="text"
                                     name="name"
@@ -133,7 +137,9 @@ const Signup = () => {
                                     placeholder=" "
                                 />
                                 {errors.email && <span className="text-sm font-semibold text-red-700">
-                                    {errors.email}
+                                    {errors.email && <span className="text-sm font-semibold text-red-700">
+                                        User Email Error Occured!!
+                                    </span>}
                                 </span>}
                                 <label
                                     className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-2 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-amber-800 peer-focus:dark:text-amber-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">

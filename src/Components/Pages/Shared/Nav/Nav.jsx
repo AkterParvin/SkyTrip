@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // import { MdPages, MdNewReleases } from 'react-icons/md';
 // import { BiDetail } from 'react-icons/bi';
 // import { PiSignInBold } from 'react-icons/pi';
@@ -16,6 +16,7 @@ import useWishlist from "../Hooks/useWishlist";
 const Nav = () => {
     const { user, logOut } = useContext(AuthContext);
     const [wishlist, refetch] = useWishlist();
+    const navigate = useNavigate();
     // const user = true;
     // logout user function 
     const handleLogOut = () => {
@@ -27,6 +28,7 @@ const Nav = () => {
                     'You clicked the button!',
                     'success'
                 )
+                navigate("/")
             })
             .catch(error => console.log(error.message))
     }
@@ -140,16 +142,16 @@ const Nav = () => {
                                     <p className="text-xs ">{ user.email}</p>
                                 </li>
                                 <li >
-                                    <Link className="hover:bg-slate-600 p-1 rounded-lg hover:text-white">Dashboard</Link>
+                                    <Link to={"/dashboard"} className="hover:bg-slate-600 p-1 rounded-lg hover:text-white">Dashboard</Link>
                                 </li>
-                                <li >
+                                {/* <li >
                                     <Link to={"/dashboard/mywishlist"} className="hover:bg-slate-600 p-1 rounded-lg hover:text-white">
                                         <button className="flex items-center justify-center">
                                             <p>Wishlist</p>
                                             <div className="badge badge-sm badge-error">+{wishlist.length}</div>
                                         </button>
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li >
                                     <Link className="hover:bg-slate-600 p-1 rounded-lg hover:text-white">Offers</Link>
                                 </li>

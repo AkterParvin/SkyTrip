@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import app from "../Firebase/Firebase.config";
 import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, updateProfile, signInWithPopup } from "firebase/auth";
 import PropTypes from 'prop-types';
+import useAxiosPublic from "../Components/Pages/Shared/Hooks/useAxiosPublic";
 // import useAxiosPublic from "../Components/Pages/Shared/Hooks/useAxiosPublic";
 
 
@@ -12,7 +13,7 @@ const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
     const googleProvider = new GoogleAuthProvider();
-    // const axiosPublic = useAxiosPublic();
+    const axiosPublic = useAxiosPublic();
 
     // goggle Signup 
     const googleSignup = () => {
@@ -25,7 +26,7 @@ const AuthProvider = ({ children }) => {
         setLoading(true);
         return signInWithEmailAndPassword(auth, email, password);
     };
-    
+
     // create user with email and password 
     const createUser = (email, password) => {
         setLoading(true);
@@ -44,22 +45,37 @@ const AuthProvider = ({ children }) => {
         const unsubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser);
             console.log("current user watching", currentUser);
-            setLoading(false);
+            if (currentUser) {
+                //get teh token and store client
+                const userInfo = { email: currentUser.email };
+
+                axiosPublic.post("/jwt", userInfo)
+                    .then(res => {
+                        if (res.data.token) {
+                            localStorage.setItem("SkyTrip-Access-Token", res.data.token);
+                            setLoading(false);
+                        }
+                    })
+            } else {
+                //remove the token (if token stored in the client local storage,caching ,in memory)
+                localStorage.removeItem("SkyTrip-Access-Token");
+                setLoading(false);
+            }
 
         })
         return () => {
             unsubscribe();
         }
-    }, []);
+    }, [axiosPublic]);
 
     const updateUserProfile = (name, photo) => {
-        return updateProfile (auth.currentUser, {
+        return updateProfile(auth.currentUser, {
             displayName: name, photoURL: photo
         });
     };
 
     const authInfo = {
-        user, loading, loginUser, createUser, logOut, updateUserProfile, googleSignup  
+        user, loading, loginUser, createUser, logOut, updateUserProfile, googleSignup
     }
 
     return (

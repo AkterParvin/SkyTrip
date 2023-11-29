@@ -1,7 +1,7 @@
 import { MdDashboard } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
 import useWishlist from "../Hooks/useWishlist";
-import { FaArrowsAlt, FaBlog, FaClipboardList, FaHome } from "react-icons/fa";
+import { FaArrowsAlt, FaBlog, FaClipboardList, FaHome, FaTasks } from "react-icons/fa";
 import { BsFillBookmarkHeartFill } from "react-icons/bs";
 import { ImProfile } from "react-icons/im";
 import { useContext } from "react";
@@ -9,11 +9,13 @@ import { AuthContext } from "../../../../Provider/AuthProvider";
 import useBookings from "../Hooks/useBookings";
 import Swal from "sweetalert2";
 import { FaSignOutAlt } from "react-icons/fa";
+import useUserRole from "../Hooks/useUserRole";
 
 
 
 const SideBar = () => {
-    const isAdmin = false;
+    const [ isAdmin, isGuide ] = useUserRole();
+    console.log(isAdmin, isGuide);
     const [wishlist] = useWishlist();
     const [bookings] = useBookings();
     const { user, logOut } = useContext(AuthContext);
@@ -59,7 +61,8 @@ const SideBar = () => {
                     </div>
                     <ul className="space-y-2 font-medium">
                         {
-                            isAdmin ? <>
+                            isAdmin &&
+                            <>
                                 <li>
                                     <Link to={'/dashboard/adminprofile'} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-200  dark:hover:bg-gray-700 group">
 
@@ -68,42 +71,75 @@ const SideBar = () => {
                                         <span className="ms-3 text-gray-800">Admin Profile</span>
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link to={'/dashboard/addpackage'} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-200  dark:hover:bg-gray-700 group">
 
-                            </> :
+
+                                        <ImProfile size={'26px'} color="#E8604C" />
+                                        <span className="ms-3 text-gray-800">Add Package</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to={'/dashboard/allusers'} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-200  dark:hover:bg-gray-700 group">
+
+                                        <ImProfile size={'26px'} color="#E8604C" />
+                                        <span className="ms-3 text-gray-800">Manage Users</span>
+                                    </Link>
+                                </li>
+
+                            </>} 
+                               { isGuide &&
                                 <>
-                                    <li>
-                                        <Link to={'/dashboard/userprofile'} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#b9aaa8]  dark:hover:bg-gray-700 group">
-                                            <MdDashboard size={'26px'} color="#E8604C" />
-                                            <span className="ms-3 text-gray-800">Tourist Profile</span>
-                                        </Link>
-                                    </li>
+                                        <li>
+                                            <Link to={'/dashboard/guideprofile'} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-200  dark:hover:bg-gray-700 group">
 
-                                    <li>
-                                        <Link to={"/dashboard/mywishlist"} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#b9aaa8] dark:hover:bg-gray-700 group">
-                                            <BsFillBookmarkHeartFill size={'26px'} color="#E8604C" />
+                                                <ImProfile size={'26px'} color="#E8604C" />
+                                                <span className="ms-3 text-gray-800">Guide Profile</span>
+                                            </Link>
+                                        </li>    
+                                        <li>
+                                            <Link to={'/dashboard/assignedtours'} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-200  dark:hover:bg-gray-700 group">
 
-                                            <span className="flex-1 ms-3 whitespace-nowrap">My Wishlist</span>
-                                            <span className="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-white bg-[#E8604C] rounded-full dark:bg-blue-900 dark:text-blue-300">+{wishlist.length}</span>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to={"/dashboard/mybookings"} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#b9aaa8] dark:hover:bg-gray-700 group">
-                                            <FaClipboardList size={'26px'} color="#E8604C" />
-                                            <span className="flex-1 ms-3 whitespace-nowrap">My Bookings</span>
-                                            <span className="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-white bg-[#E8604C] rounded-full dark:bg-blue-900 dark:text-blue-300">+{bookings.length}</span>
-                                        </Link>
-                                    </li>
-                                    <li >
-                                        <a onClick={handleLogOut} className="flex items-center p-2  text-gray-900 rounded-lg dark:text-white hover:bg-[#b9aaa8] dark:hover:bg-gray-700 group">
-                                            
-                                            <FaSignOutAlt size={'26px'} color="#E8604C" />
-                                            <span className="flex-1 ms-3 whitespace-nowrap">Log Out</span>
-                                            
-                                        </a>
-                                       
-                                    </li>
-                                </>
-                        }
+                                                <FaTasks size={'26px'} color="#E8604C" />
+                                                <span className="ms-3 text-gray-800">Assigned Packages</span>
+                                            </Link>
+                                        </li>    
+                            </>}
+                        {!isAdmin && !isGuide && <>
+                            <li>
+                                <Link to={'/dashboard/userprofile'} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#b9aaa8]  dark:hover:bg-gray-700 group">
+                                    <MdDashboard size={'26px'} color="#E8604C" />
+                                    <span className="ms-3 text-gray-800">Tourist Profile</span>
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link to={"/dashboard/mywishlist"} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#b9aaa8] dark:hover:bg-gray-700 group">
+                                    <BsFillBookmarkHeartFill size={'26px'} color="#E8604C" />
+
+                                    <span className="flex-1 ms-3 whitespace-nowrap">My Wishlist</span>
+                                    <span className="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-white bg-[#E8604C] rounded-full dark:bg-blue-900 dark:text-blue-300">+{wishlist.length}</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to={"/dashboard/mybookings"} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#b9aaa8] dark:hover:bg-gray-700 group">
+                                    <FaClipboardList size={'26px'} color="#E8604C" />
+                                    <span className="flex-1 ms-3 whitespace-nowrap">My Bookings</span>
+                                    <span className="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-white bg-[#E8604C] rounded-full dark:bg-blue-900 dark:text-blue-300">+{bookings.length}</span>
+                                </Link>
+                            </li>
+                            <li >
+                                <a onClick={handleLogOut} className="flex items-center p-2  text-gray-900 rounded-lg dark:text-white hover:bg-[#b9aaa8] dark:hover:bg-gray-700 group">
+
+                                    <FaSignOutAlt size={'26px'} color="#E8604C" />
+                                    <span className="flex-1 ms-3 whitespace-nowrap">Log Out</span>
+
+                                </a>
+
+                            </li>
+                        </>}
+                               
+                        
                         <div className="divider divider-error "></div>
                         <li>
                             <Link to={"/"} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#b9aaa8] dark:hover:bg-gray-700 group">

@@ -12,7 +12,11 @@ import Dashboard from "../Components/Root/Dashboard";
 import MyBookings from "../Components/Pages/Dashboard/MyBookings/MyBookings";
 import UserProfile from "../Components/Pages/Dashboard/UserHome/UserProfile";
 import AdminProfile from "../Components/Pages/Dashboard/AdminHome/AdminProfile";
-
+import AllUsers from "../Components/Pages/Dashboard/AllUsers/AllUsers";
+import AddPackage from "../Components/Pages/Dashboard/AddPackage/AddPackage";
+import GuideProfile from "../Components/Pages/Dashboard/GuideHome/GuideProfile";
+import AssignedTours from "../Components/Pages/Dashboard/AssignedTours/AssignedTours";
+import PrivateRoute from "../Routes/PrivateRoute";
 
 const Routes = createBrowserRouter([
     {
@@ -57,6 +61,27 @@ const Routes = createBrowserRouter([
             {
                 path: "adminprofile",
                 element: <AdminProfile />
+
+            },
+            {
+                path: "allusers",
+                element: <AllUsers />
+
+            },
+            {
+                path: "addpackage",
+                element: <AddPackage />
+
+            },
+            // Guide Routes 
+            {
+                path: "guideprofile",
+                element: <GuideProfile />
+
+            },
+            {
+                path: "assignedtours",
+                element: <PrivateRoute> <AssignedTours /></PrivateRoute>
 
             },
             // user routes 

@@ -8,22 +8,33 @@ import { useContext, useState } from "react";
 import { FaBook } from "react-icons/fa";
 import { AuthContext } from "../../../../Provider/AuthProvider";
 import Swal from "sweetalert2";
+import useFindGuide from "../Hooks/useFindGuide";
 
 const image_hosting_key = import.meta.env.VITE_IMAGE_HOSTING;
 const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
 
 const BookingForm = ({ tourDetails }) => {
-    const { price, _id, image, title } = tourDetails;
+    const { price, _id, image, title, guide_email } = tourDetails;
     const { user } = useContext(AuthContext);
     // console.log(user)
     const axiosSecure = useAxiosSecure();
     const axiosPublic = useAxiosPublic();
+    const [guides] = useFindGuide();
+    console.log(guides);
+    const guidesData = guides ? guides.map(guide => {
+        return {
+            guide_name: guide.name,
+            guide_email: guide.email
+        }
+    }) : [];
+    console.log(guidesData);
     const { register, handleSubmit, reset } = useForm();
     console.log();
     const tourist_name = user?.displayName;
     const tourist_email = user?.email;
     const tour_id = _id;
-    
+   
+
 
     const onSubmit = async (data) => {
         // console.log(data);
@@ -41,13 +52,14 @@ const BookingForm = ({ tourDetails }) => {
                 tour_id,
                 price,
                 tourist_email,
-                guide_name: data.guide_name,
+                guide_email: data.guide_email,
                 type: data.type,
                 date: data.date,
+                status:"in review",
                 image,
                 title,
                 touristImage: res.data.data.display_url
-                    
+
             };
             const bookingRes = await axiosSecure.post("/bookings", bookingDoc);
             // console.log(bookingRes.data);
@@ -69,7 +81,7 @@ const BookingForm = ({ tourDetails }) => {
         <div>
             <div className="mx-auto max-w-screen-xl px-4 py-5 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-lg">
-                    <h1 className="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">
+                    <h1 className="text-center text-2xl font-bold text-[#da7561] sm:text-3xl">
                         Get started today
                     </h1>
 
@@ -162,11 +174,17 @@ const BookingForm = ({ tourDetails }) => {
                                     </label>
                                     <select
                                         // defaultValue={"default"}
-                                        {...register("guide_name", { required: true })}
+                                        {...register("guide_email", { required: true })}
                                         className="select select-bordered w-full max-w-xs ">
                                         <option disabled value={"default"}>Select a Guide</option>
-
-                                        <option value="Isabella Wright">
+                                        
+                                        {guidesData?.map((guide, index) => (
+                                            <option key={index} value={guide.guide_email}>
+                                                {guide.guide_name}
+                                            </option>
+                                        ))
+                                        }
+                                        {/* <option value="Isabella Wright">
                                             Isabella Wright
                                         </option>
 
@@ -200,7 +218,7 @@ const BookingForm = ({ tourDetails }) => {
 
                                         <option value="Rajesh Thapa">
                                             Rajesh Thapa
-                                        </option>
+                                        </option> */}
 
                                     </select>
                                 </div>
@@ -271,6 +289,6 @@ const BookingForm = ({ tourDetails }) => {
 };
 BookingForm.propTypes = {
     tourDetails: PropTypes.object.isRequired,
-    
+
 }
 export default BookingForm;

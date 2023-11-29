@@ -94,7 +94,7 @@ const MyWishlist = () => {
                             </div>
                         </div> :
                         <div className=" h-[90vh] md:h-[60vh] flex items-center justify-center max-w-3xl mx-auto flex-col">
-                            <h2 className="text-xl md:text-3xl text-center font-bold text-sky-700">Sorry you do not have any Bookings</h2>
+                            <h2 className="text-xl md:text-3xl text-center font-bold text-red-500">Sorry you do not have any Wishlist</h2>
 
                             <Lottie animationData={empty} className="h-48 md:h-64"></Lottie>
 

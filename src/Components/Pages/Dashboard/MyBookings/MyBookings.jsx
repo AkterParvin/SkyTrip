@@ -77,20 +77,22 @@ const MyBookings = () => {
 
 
                             </ul>
-                            <div className="space-y-1 text-center">
-                                <p>Total amount: 
-                                    <span className="font-semibold text-[#E8604C]">${totalPrice}</span>
-                                </p>
-                                <p className="text-sm dark:text-gray-400">Not including taxes and shipping costs</p>
-                            </div>
-                            <div className="flex justify-center ">
-                                <Link to='/'>  <button type="button" className="px-6 py-2 border rounded-md dark:border-violet-400">Back
-                                    <span className="text-[#E8604C] sr-only sm:not-sr-only"> to shop</span>
-                                </button>
-                                </Link>
-                                <button type="button" className="px-6 py-2 border rounded-md dark:bg-violet-400 dark:text-gray-900 dark:border-violet-400">
-                                    <span className="sr-only sm:not-sr-only">Continue to </span>Checkout
-                                </button>
+                            <div className="bg-gray-800  w-[85%] mx-auto py-5 text-white">
+                                <div className="space-y-1 text-center my-2">
+                                    <p>Total amount:
+                                        <span className="font-semibold text-[#E8604C]"> ${totalPrice}</span>
+                                    </p>
+                                    <p className="text-xs dark:text-gray-400">Not including taxes and shipping costs</p>
+                                </div>
+                                <div className="flex justify-center gap-3">
+                                    <Link to='/'>  <button type="button" className="px-6 py-2 border rounded-md dark:border-violet-400">Back
+                                        <span className="text-[#E8604C] sr-only sm:not-sr-only"> to shop</span>
+                                    </button>
+                                    </Link>
+                                    <button type="button" className="px-6 py-2 border rounded-md hover:bg-gray-100 hover:text-gray-800 transition-all duration-300 dark:bg-violet-400 dark:text-gray-900 dark:border-violet-400">
+                                        <span className="sr-only sm:not-sr-only">Continue to </span>Pay
+                                    </button>
+                                </div>
                             </div>
                         </div> :
                         <div className=" h-[90vh] md:h-[60vh] flex items-center justify-center max-w-3xl mx-auto flex-col">

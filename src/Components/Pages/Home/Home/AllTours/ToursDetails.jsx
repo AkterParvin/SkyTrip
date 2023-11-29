@@ -11,7 +11,7 @@ import BookingForm from "../../../Shared/BookingForm/BookingForm";
 const ToursDetails = () => {
     const tourDetails = useLoaderData();
     // console.log(tourDetails);
-    const { guide_name, max_people, photos, price, spot_name, title, tour_plan, type, _id, days } = tourDetails;
+    const { guide_name, guide_email, max_people, photos, price, spot_name, title, tour_plan, type, _id, days } = tourDetails;
     // console.log(tour_plan)
 
     return (
