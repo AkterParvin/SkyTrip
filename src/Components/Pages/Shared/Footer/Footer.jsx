@@ -2,7 +2,7 @@
 import { Box, Container, Grid, Typography } from '@mui/material';
 import Sticky from './Sticky';
 import logoImage from "/logo.png"
-import { Link } from 'react-router-dom';
+
 import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 
