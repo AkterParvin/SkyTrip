@@ -227,6 +227,7 @@ const ToursDetails = () => {
                         <div>
                             <BookingForm tourDetails={tourDetails} />
                         </div>
+                        
                     </div>
                 </div>
                 {/* all page common section  */}
