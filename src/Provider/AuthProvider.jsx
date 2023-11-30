@@ -47,18 +47,18 @@ const AuthProvider = ({ children }) => {
             console.log("current user watching", currentUser);
             if (currentUser) {
                 //get teh token and store client
-                const userInfo = { email: currentUser.email };
+                const userInfo = { email: currentUser?.email };
 
                 axiosPublic.post("/jwt", userInfo)
                     .then(res => {
                         if (res.data.token) {
-                            localStorage.setItem("SkyTrip-Access-Token", res.data.token);
+                            localStorage.setItem("Access-Token", res.data.token);
                             setLoading(false);
                         }
                     })
             } else {
                 //remove the token (if token stored in the client local storage,caching ,in memory)
-                localStorage.removeItem("SkyTrip-Access-Token");
+                localStorage.removeItem("Access-Token");
                 setLoading(false);
             }
 

@@ -9,13 +9,6 @@ const useFindGuide = () => {
     // const { user } = useContext(AuthContext);
     const axiosSecure = useAxiosSecure();
     const [guides, setGuides] = useState();
-    // console.log(guides);
-    // useEffect(() => {
-    //     axiosSecure.get("/users/guide")
-    //         .then(res => {
-    //             setGuides(res.data);
-    //     })
-    // },[axiosSecure])
     useEffect(() => {
         const findGuide = async () => {
             try {

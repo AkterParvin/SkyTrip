@@ -71,7 +71,7 @@ const MyBookings = () => {
                                         key={tour._id}
                                         tour={tour}
                                         handleDelete={handleDelete}
-
+                                        bookings={bookings}
                                     ></BookingDetails>)
                                 }
 
@@ -90,7 +90,7 @@ const MyBookings = () => {
                                     </button>
                                     </Link>
                                     <button type="button" className="px-6 py-2 border rounded-md hover:bg-gray-100 hover:text-gray-800 transition-all duration-300 dark:bg-violet-400 dark:text-gray-900 dark:border-violet-400">
-                                        <span className="sr-only sm:not-sr-only">Continue to </span>Pay
+                                        <span className="sr-only sm:not-sr-only">Continue to </span>Checkout
                                     </button>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@ const MyBookings = () => {
                         </div>
                 }
 
-            </div>     
+            </div>
         </div>
     );
 };

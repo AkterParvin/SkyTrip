@@ -12,10 +12,9 @@ import { FaSignOutAlt } from "react-icons/fa";
 import useUserRole from "../Hooks/useUserRole";
 
 
-
 const SideBar = () => {
-    const [ isAdmin, isGuide ] = useUserRole();
-    console.log(isAdmin, isGuide);
+    const [isAdmin, isGuide, isRoleLoading] = useUserRole();
+    // console.log(isAdmin, isGuide);
     const [wishlist] = useWishlist();
     const [bookings] = useBookings();
     const { user, logOut } = useContext(AuthContext);
@@ -37,7 +36,7 @@ const SideBar = () => {
     return (
         <div>
 
-            <aside  className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700" aria-label="Sidebar">
+            <aside className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700" aria-label="Sidebar">
 
                 <div className="h-full px-3 pb-4 overflow-y-auto bg-[#fcecea] dark:bg-gray-800 pt-10">
                     <div className="flex flex-col gap-2 justify-center items-center mb-5 bg-blue-100 rounded-xl  shadow-xl py-5">
@@ -57,10 +56,10 @@ const SideBar = () => {
                                 {user?.email}
                             </p>
                         </span>
-                       
+
                     </div>
                     <ul className="space-y-2 font-medium">
-                        {
+                       { isRoleLoading ? <p>Loading Data</p> :  <> {
                             isAdmin &&
                             <>
                                 <li>
@@ -87,23 +86,23 @@ const SideBar = () => {
                                     </Link>
                                 </li>
 
-                            </>} 
-                               { isGuide &&
-                                <>
-                                        <li>
-                                            <Link to={'/dashboard/guideprofile'} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-200  dark:hover:bg-gray-700 group">
+                            </>}
+                        {isGuide &&
+                            <>
+                                <li>
+                                    <Link to={'/dashboard/guideprofile/:guide_email'} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-200  dark:hover:bg-gray-700 group">
 
-                                                <ImProfile size={'26px'} color="#E8604C" />
-                                                <span className="ms-3 text-gray-800">Guide Profile</span>
-                                            </Link>
-                                        </li>    
-                                        <li>
-                                            <Link to={'/dashboard/assignedtours'} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-200  dark:hover:bg-gray-700 group">
+                                        <ImProfile size={'26px'} color="#E8604C" />
+                                        <span className="ms-3 text-gray-800">Guide Profile</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to={'/dashboard/assignedtours'} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-200  dark:hover:bg-gray-700 group">
 
-                                                <FaTasks size={'26px'} color="#E8604C" />
-                                                <span className="ms-3 text-gray-800">Assigned Packages</span>
-                                            </Link>
-                                        </li>    
+                                        <FaTasks size={'26px'} color="#E8604C" />
+                                        <span className="ms-3 text-gray-800">Assigned Packages</span>
+                                    </Link>
+                                </li>
                             </>}
                         {!isAdmin && !isGuide && <>
                             <li>
@@ -137,9 +136,9 @@ const SideBar = () => {
                                 </a>
 
                             </li>
-                        </>}
-                               
-                        
+                        </>}</>}
+
+
                         <div className="divider divider-error "></div>
                         <li>
                             <Link to={"/"} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#b9aaa8] dark:hover:bg-gray-700 group">

@@ -1,0 +1,269 @@
+[
+  {
+    "guide_name": "Isabella Wright",
+    "guide_email": "isabella@gmail.com",
+    "guide_pic": "https://i.imgur.com/YKrZ7gz.jpg",
+    "contact_details": {
+      "phone": "+123456789",
+      "address": "123 Main Street, City, Country",
+      "website": "www.isabellawrighttours.com"
+    },
+    "education": {
+      "degree": "Bachelor's in Tourism Management",
+      "school": "Tourism Institute",
+      "graduation_year": 2016
+    },
+    "skills": [
+      "Multilingual Communication",
+      "Historical Knowledge",
+      "Customer Service",
+      "Cultural Awareness",
+      "Tour Coordination"
+    ],
+    "work_experience": [
+      {
+        "position": "Senior Tour Guide",
+        "company": "Adventure Tours Inc.",
+        "start_date": "2016-07-01",
+        "end_date": "2021-12-31",
+        "description": "Led groups on historical tours, managed logistics, and provided in-depth cultural insights."
+      },
+      {
+        "position": "Tourism Coordinator",
+        "company": "Global Explorers",
+        "start_date": "2014-05-01",
+        "end_date": "2016-06-30",
+        "description": "Assisted in organizing tour itineraries and facilitated client interactions."
+      }
+    ]
+  },
+  {
+    "guide_name": "Nikos Georgiou",
+    "guide_email": "nikos@gmail.com",
+    "guide_pic": "https://i.imgur.com/UauMBVT.jpg",
+    "contact_details": {
+      "phone": "+987654321",
+      "address": "456 Park Avenue, Town, Country",
+      "website": "www.nikosgeorgioutours.com"
+    },
+    "education": {
+      "degree": "Master's in Archaeology",
+      "school": "University of History and Culture",
+      "graduation_year": 2014
+    },
+    "skills": [
+      "Archaeological Expertise",
+      "Guided Excavation Tours",
+      "Museum Curation",
+      "Public Speaking",
+      "Research Analysis"
+    ],
+    "work_experience": [
+      {
+        "position": "Lead Archaeologist",
+        "company": "Ancient Explorations Group",
+        "start_date": "2014-09-01",
+        "end_date": "2020-12-31",
+        "description": "Directed archaeological digs, conducted research, and delivered educational talks."
+      }
+    ]
+  },
+  {
+    "guide_name": "David Brute",
+    "guide_email": "david@gmail.com",
+    "guide_pic": "https://i.imgur.com/9rwxtCG.jpg",
+    "contact_details": {
+      "phone": "+111222333",
+      "address": "789 Broadway, City, Country",
+      "website": "www.davidbrutetours.com"
+    },
+    "education": {
+      "degree": "Bachelor's in Hospitality Management",
+      "school": "Hospitality University",
+      "graduation_year": 2017
+    },
+    "skills": [
+      "Customer Relationship Management",
+      "Event Planning",
+      "Problem Solving",
+      "Hospitality Expertise",
+      "Team Leadership"
+    ],
+    "work_experience": [
+      {
+        "position": "Hospitality Manager",
+        "company": "Luxury Resort & Spa",
+        "start_date": "2017-02-01",
+        "end_date": "2022-03-31",
+        "description": "Oversaw guest services, organized events, and managed staff for a luxury resort."
+      }
+    ]
+  },
+{
+    "guide_name": "Mark Johnson",
+    "guide_email": "mark@gmail.com",
+    "guide_pic": "https://i.imgur.com/x2122ok.jpg",
+    "contact_details": {
+      "phone": "+123456789",
+      "address": "123 Main Street, City, Country"
+    },
+    "education": {
+      "degree": "Bachelor's in Tourism Management",
+      "school": "Tourism University",
+      "graduation_year": 2015
+    },
+    "skills": [
+      "Multilingual Communication",
+      "Tour Planning",
+      "Cultural Knowledge",
+      "Customer Service"
+    ],
+    "work_experience": [
+      {
+        "position": "Tour Guide",
+        "company": "Travel Explorers",
+        "start_date": "2016-07-01",
+        "end_date": "2022-12-31",
+        "description": "Conduct guided tours for tourists, Provide historical and cultural information,Ensure customer satisfaction."
+       
+      }
+    ]
+  },
+  {
+    "guide_name": "Carlos Rodriguez",
+    "guide_email": "carlos@gmail.com",
+    "guide_pic": "https://i.imgur.com/PDG2cQf.jpg",
+    "contact_details": {
+      "phone": "+987654321",
+      "address": "456 Oak Avenue, City, Country"
+    },
+    "education": {
+      "degree": "Hospitality Management Diploma",
+      "school": "Hospitality Institute",
+      "graduation_year": 2014
+    },
+    "skills": [
+      "Local Area Expertise",
+      "Event Planning",
+      "Team Leadership",
+      "Adaptability"
+    ],
+    "work_experience": [
+      {
+        "position": "City Tour Coordinator",
+        "company": "Urban Adventures",
+        "start_date": "2015-07-01",
+        "end_date": "2021-12-31",
+        "description": "Organized and led city tours,Managed tour logistics,Trained new guides"
+       
+      }
+    ]
+  },
+  {
+    "guide_name": "Rahul Das",
+    "guide_email": "rahul@gmail.com",
+    "guide_pic": "https://i.imgur.com/qflCtnl.jpg",
+    "contact_details": {
+      "phone": "+444333222",
+      "address": "789 Pine Street, City, Country"
+    },
+    "education": {
+      "degree": "Cultural Studies Certificate",
+      "school": "Cultural Center",
+      "graduation_year": 2013
+    },
+    "skills": [
+      "Interpersonal Communication",
+      "Problem Solving",
+      "Outdoor Adventure",
+      "Cultural Awareness"
+    ],
+    "work_experience": [
+      {
+        "position": "Heritage Guide",
+        "company": "Cultural Heritage Tours",
+        "start_date": "2017-07-01",
+        "end_date": "2021-12-31",
+        "description": "Conduct heritage tours,Preserve cultural heritage sites,Interpret history for visitors"
+   
+      }
+    ]
+  },
+
+  {
+    "guide_name": "Sophie Berg",
+    "guide_email": "sophie@gmail.com",
+    "guide_pic": "https://i.imgur.com/iW8EV0A.jpg",
+    "contact_details": {
+      "phone": "+1234567890",
+      "address": "123 Main Street, City, Country",
+      "website": "https://sophietourguide.com"
+    },
+    "education": {
+      "degree": "Bachelor of Arts in Tourism Management",
+      "school": "Tourism University",
+      "graduation_year": 2018
+    },
+    "skills": ["Multilingual Communication", "Cultural Interpretation", "Customer Service", "Destination Knowledge"],
+    "work_experience": [
+      {
+        "position": "Senior Tour Guide",
+        "company": "Adventure Explorers",
+        "start_date": "2018-09-01",
+        "end_date": "2021-12-31",
+        "description": "Led tours, managed logistics, and provided historical insights."
+      }
+    ]
+  },
+  {
+    "guide_name": "Rahim Khan",
+    "guide_email": "rahim@gmail.com",
+    "guide_pic": "https://i.imgur.com/RUXiWcS.jpg",
+    "contact_details": {
+      "phone": "+9876543210",
+      "address": "456 Park Avenue, City, Country",
+      "website": "https://rahimguides.com"
+    },
+    "education": {
+      "degree": "Tourism and Hospitality Diploma",
+      "school": "Local Tourism Institute",
+      "graduation_year": 2016
+    },
+    "skills": ["Outdoor Survival Skills", "Storytelling", "Navigation", "Local Traditions Knowledge"],
+    "work_experience": [
+      {
+        "position": "Tour Guide",
+        "company": "Discovery Tours",
+        "start_date": "2019-07-01",
+        "end_date": "2023-06-31",
+        "description": "Organized and led tours, provided historical and cultural insights."
+      }
+    ]
+  },
+  {
+    "guide_name": "Rajesh Thapa",
+    "guide_email": "rajesh@gmail.com",
+    "guide_pic": "https://i.imgur.com/b9TCO9q.jpg",
+    "contact_details": {
+      "phone": "+4445556666",
+      "address": "789 Broadway Street, City, Country",
+      "website": "https://rajeshthapatours.com"
+    },
+    "education": {
+      "degree": "Bachelor's in Tourism and Hospitality Management",
+      "school": "Global University",
+      "graduation_year": 2019
+    },
+    "skills": ["Cultural Sensitivity", "Group Management", "Language Proficiency", "Itinerary Planning"],
+    "work_experience": [
+      {
+        "position": "Assistant Tour Guide",
+        "company": "Global Adventures",
+        "start_date": "2019-07-01",
+        "end_date": "2021-12-31",
+        "description": "Assisted in guiding tours, provided customer support, and handled logistics."
+      }
+    ]
+  }
+]
+

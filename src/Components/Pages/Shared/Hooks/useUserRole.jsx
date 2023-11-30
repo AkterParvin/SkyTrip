@@ -11,15 +11,15 @@ const useUserRole = () => {
     const axiosSecure = useAxiosSecure();
     const [isAdmin, setAdmin] = useState(false);
     const [isGuide, setGuide] = useState(false);
-    const [isLoading, setIsLoading] = useState(true);
     const [isRoleLoading, setRoleLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(true);
 
     const { data: userRole = [], isLoading:roleIsLoading } = useQuery({
         queryKey: ["userRole", user?.email],
         queryFn: async () => {
             const response = await axiosSecure.get(`/users/role/${user.email}`)
             // console.log(response.data.role);
-            return response.data.role;
+            return response.data?.role;
         },     
     });
     useEffect(() => {
@@ -33,7 +33,6 @@ const useUserRole = () => {
             }
             setRoleLoading(false); 
         }
-        // Update loading state based on role loading
     }, [userRole, roleIsLoading]);
     useEffect(() => {
         // Update initial loading state after the initial data load is complete

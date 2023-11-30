@@ -20,14 +20,14 @@ const BookingForm = ({ tourDetails }) => {
     const axiosSecure = useAxiosSecure();
     const axiosPublic = useAxiosPublic();
     const [guides] = useFindGuide();
-    console.log(guides);
+    // console.log(guides);
     const guidesData = guides ? guides.map(guide => {
         return {
             guide_name: guide.name,
             guide_email: guide.email
         }
     }) : [];
-    console.log(guidesData);
+    // console.log(guidesData);
     const { register, handleSubmit, reset } = useForm();
     console.log();
     const tourist_name = user?.displayName;
@@ -62,15 +62,17 @@ const BookingForm = ({ tourDetails }) => {
 
             };
             const bookingRes = await axiosSecure.post("/bookings", bookingDoc);
-            // console.log(bookingRes.data);
+            console.log(bookingRes.data);
             if (bookingRes.data.insertedId) {
                 reset();
                 Swal.fire({
-                    position: "top-end",
+                    title: `${title}Booking successfull`,
+                    text: " Please visit My Bookings page to manage your bookings.",
                     icon: "success",
-                    title: `${data.type} tour is booked`,
-                    showConfirmButton: false,
-                    timer: 1500
+                    confirmButtonColor: "#E8604C",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Ok",
+                    showCancelButton: false,
                 });
             }
         }

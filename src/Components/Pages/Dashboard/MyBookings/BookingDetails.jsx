@@ -4,11 +4,12 @@ import { useContext } from 'react';
 import { BiSolidMessageAltDetail } from "react-icons/bi";
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../../Provider/AuthProvider';
-import { FaTrash } from 'react-icons/fa';
+import { FaCut, FaDollarSign, FaMoneyBill, FaTrash } from 'react-icons/fa';
+import ReactConfetti from '../../Shared/confetti/ReactConfetti';
 
-const BookingDetails = ({ tour, handleDelete }) => {
+const BookingDetails = ({ tour, handleDelete, bookings }) => {
     const { user } = useContext(AuthContext);
-   
+
     const { tourist_name, tour_id, price, tourist_email, guide_email, type, date, image, title, touristImage, status, _id } = tour;
     return (
         <div className="w-[85%] mx-auto">
@@ -44,34 +45,48 @@ const BookingDetails = ({ tour, handleDelete }) => {
                                 </Link>
                             </div>
                         </div>
-                        <div className="flex text-sm gap-1">
+                        <div className="flex text-sm gap-3 mt-10">
+                            {
+                                status === "in review" ? <> <button onClick={() => handleDelete(tour_id)} className="relative  items-center justify-start inline-block px-5 py-2 overflow-hidden font-medium transition-all bg-[#2F4858] rounded-xl hover:bg-[#f08f6f] group">
+                                    <span className="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-300 transition-all border-[#6baef1] rounded-xl"></span>
+                                    <span className="relative w-full text-sm text-left text-gray-100 transition-colors duration-500 ease-in-out group-hover:text-gray-800 flex items-center justify-center gap-1">
+                                        <FaTrash className="text-sm text-red-500"></FaTrash> <p>Cancel</p></span>
+                                </button></> :
+                                    <> <button disabled onClick={() => handleDelete(tour_id)} className="flex items-center justify-center gap-1 btn btn-sm">
+                                        <FaTrash className="text-sm text-gray-200"></FaTrash> <p>Cancel</p>
+                                    </button>
+                                    </>
+                            }
+                            {
+                                status === "accepted" ?
+                                    <> <button className="relative  items-center justify-start inline-block px-5 py-2 overflow-hidden font-medium transition-all bg-[#b04838] rounded-xl hover:bg-white group">
+                                        <span className="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-300 transition-all border-[#fff1ec] rounded-xl"></span>
+                                        <span className="relative w-full text-sm text-left text-gray-100 transition-colors duration-500 ease-in-out group-hover:text-gray-800 flex items-center justify-center ">
+                                            <FaDollarSign color='' /> <p>Pay Bill</p></span>
+                                    </button>
+                                    </> :
+                                    <>
+                                        <button disabled  className="flex items-center justify-center gap-1 btn btn-sm">
+                                            <FaDollarSign className="text-sm text-gray-200"></FaDollarSign> <p>Pay Bill</p>
+                                        </button>
+                                    </>
+                            }
+                            {
+                                bookings?.length > 3 ? <> <ReactConfetti /> </> :
+                                    <>
+                                        <button disabled className="flex items-center justify-center gap-1 btn btn-sm">
+                                            <FaMoneyBill className="text-sm text-gray-200"></FaMoneyBill> <p>Apply Discount</p>
+                                        </button>  
+                                    </>
+                            }
+                         
 
-                            <button onClick={() => handleDelete(tour_id)} type="button" className="flex items-center bg-[#efd8d3] border shadow-xl hover:bg-red-300 hover:border-gray-800 border-red-500 rounded px-3 py-2 pl-0 space-x-1 font-semibold">
-                                <FaTrash className="text-xl text-red-900"></FaTrash>
-                                <span>Cancel</span>
-                            </button>
-                            <a  className="relative  items-center justify-start inline-block px-5 py-3 overflow-hidden font-medium transition-all bg-blue-600 rounded-full hover:bg-white group">
-                                <span className="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-100 transition-all border-white rounded-full"></span>
-                                <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-blue-600">Button Text</span>
-                            </a>
-                            <a href="#_" className="relative inline-flex items-center justify-start  px-5 py-3 overflow-hidden font-bold rounded-full group">
-                                <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-[#a84333]/10"></span>
-                                <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8"></span>
-                                <span className="relative w-full text-left text-[#a84333] transition-colors duration-200 ease-in-out group-hover:text-gray-900">Button Text</span>
-                                <span className="absolute inset-0 border-2 border-white rounded-full"></span>
-                            </a>
-
-                           
-                            <Link to={`/tourdetails/${tour_id}`}>  <button type="button" className="flex items-center bg-sky-100 border shadow-xl hover:bg-emerald-100 hover:border-emerald-500 border-sky-500 rounded px-3 py-2 pl-0 font-semibold">
+                            {/* <Link to={`/tourdetails/${tour_id}`}>  <button type="button" className="flex items-center bg-sky-100 border shadow-xl hover:bg-emerald-100 hover:border-emerald-500 border-sky-500 rounded px-3 py-2 pl-0 font-semibold">
                                 <BiSolidMessageAltDetail className="text-xl text-gray-800 " />
                                 <span>See Details</span>
                             </button>
-                            </Link>
-                            <Link to={`/tourdetails/${tour_id}`}>  <button type="button" className="flex items-center bg-sky-100 border shadow-xl hover:bg-emerald-100 hover:border-emerald-500 border-sky-500 rounded px-3 py-2 pl-0 font-semibold">
-                                <BiSolidMessageAltDetail className="text-xl text-gray-800 " />
-                                <span>See Details</span>
-                            </button>
-                            </Link>
+                            </Link> */}
+
                         </div>
                     </div>
                 </div>
@@ -82,6 +97,6 @@ const BookingDetails = ({ tour, handleDelete }) => {
 BookingDetails.propTypes = {
     tour: PropTypes.object.isRequired,
     handleDelete: PropTypes.func,
-    // handleUpdate: PropTypes.func
+    bookings: PropTypes.array
 }
 export default BookingDetails;

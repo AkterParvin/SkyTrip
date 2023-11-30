@@ -75,8 +75,9 @@ const Routes = createBrowserRouter([
             },
             // Guide Routes 
             {
-                path: "guideprofile",
-                element: <GuideProfile />
+                path: "guideprofile/:guide_email",
+                element: <GuideProfile />,
+                loader: ({ params }) => fetch(`http://localhost:5000/guides/${params.guide_email}`)
 
             },
             {

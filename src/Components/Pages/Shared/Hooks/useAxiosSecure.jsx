@@ -16,7 +16,7 @@ const useAxiosSecure = () => {
     const { logOut } = useContext(AuthContext);
 
     axiosSecure.interceptors.request.use(function (config) {
-        const token = localStorage.getItem("SkyTrip-Access-Token");
+        const token = localStorage.getItem("Access-Token");
         console.log("Operation stopped by interceptors");
         config.headers.authorization = `Bearer ${token}`;
         return config;
