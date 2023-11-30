@@ -39,29 +39,29 @@ const Login = () => {
                 console.log(error.message);
                 setloginError(error.message);
             })
-                // Swal.fire(
-                //     'Login Successfull',
-                //     'Please proceed to the page',
+        // Swal.fire(
+        //     'Login Successfull',
+        //     'Please proceed to the page',
 
-                // )
-                // navigate(location?.state ? location.state : '/');
+        // )
+        // navigate(location?.state ? location.state : '/');
 
-            //     axios.post('http://localhost:5000/jwt',
-            //         user,
-            //         { withCredentials: true })
-            //         .then(res => {
-            //             console.log(res.data);
-            //         })
-            // })
-            // .catch(error => {
-            //     console.log(error.message);
-            //     setError(error.message);
-            // })
+        //     axios.post('https://skytrip-server.vercel.app/jwt',
+        //         user,
+        //         { withCredentials: true })
+        //         .then(res => {
+        //             console.log(res.data);
+        //         })
+        // })
+        // .catch(error => {
+        //     console.log(error.message);
+        //     setError(error.message);
+        // })
 
 
     }
 
-   
+
     return (
         <div>
             <div className='h-full mb-10'>

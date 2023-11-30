@@ -18,6 +18,7 @@ const SideBar = () => {
     const [wishlist] = useWishlist();
     const [bookings] = useBookings();
     const { user, logOut } = useContext(AuthContext);
+    // const guide_email = user?.email;
     const navigate = useNavigate();
     const handleLogOut = () => {
         logOut()
@@ -90,7 +91,7 @@ const SideBar = () => {
                         {isGuide &&
                             <>
                                 <li>
-                                    <Link to={'/dashboard/guideprofile/:guide_email'} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-200  dark:hover:bg-gray-700 group">
+                                    <Link to={`/dashboard/guideprofile/${user?.email}`} className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-200  dark:hover:bg-gray-700 group">
 
                                         <ImProfile size={'26px'} color="#E8604C" />
                                         <span className="ms-3 text-gray-800">Guide Profile</span>

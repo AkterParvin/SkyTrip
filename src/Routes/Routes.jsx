@@ -39,9 +39,9 @@ const Routes = createBrowserRouter([
             {
                 path: "/tourdetails/:id",
                 element: <ToursDetails />,
-                loader: ({ params }) => fetch(`http://localhost:5000/tours/${params.id}`)
+                loader: ({ params }) => fetch(`https://skytrip-server.vercel.app/tours/${params.id}`)
             },
-            
+
             {
                 path: "/login",
                 element: <Login />
@@ -55,7 +55,7 @@ const Routes = createBrowserRouter([
     {
         path: "/dashboard",
         // errorElement:<ErrorPage/>,
-        element:<Dashboard/> ,
+        element: <Dashboard />,
         children: [
             // Admin Routes 
             {
@@ -77,7 +77,7 @@ const Routes = createBrowserRouter([
             {
                 path: "guideprofile/:guide_email",
                 element: <GuideProfile />,
-                loader: ({ params }) => fetch(`http://localhost:5000/guides/${params.guide_email}`)
+                loader: ({ params }) => fetch(`https://skytrip-server.vercel.app/guides/${params.guide_email}`)
 
             },
             {
@@ -104,7 +104,7 @@ const Routes = createBrowserRouter([
 
 
         ]
-        
+
     }
 ])
 

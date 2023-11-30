@@ -1,11 +1,145 @@
 
+import { Box, Container, Grid, Typography } from '@mui/material';
+import Sticky from './Sticky';
+import logoImage from "/logo.png"
+import { Link } from 'react-router-dom';
+import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
+
 
 const Footer = () => {
+    const styles = {
+  footer: {
+    backgroundColor: '#f5f5f5',
+    padding: '20px',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  copyright: {
+    fontSize: '14px',
+  },
+  links: {
+    display: 'flex',
+    '& a': {
+      margin: '0 10px',
+      textDecoration: 'none',
+      color: '#000',
+      fontSize: '14px',
+    },
+  },
+  footerLogo: {
+    display: 'inline-block',
+    float: 'left',
+    marginRight: '20px',
+    width:'45px'
+  },
+};
+
+
     return (
-        <div>
+        <>
+            <Container>
+                <Grid container spcing={3}>
+                    <Grid item xs={12} sm={6} md={4} lg={3} sx={{backgroundColor:"transparent",color: "white"}}>
+                        
+                        <Typography variant="h4" sx={{ margin: "15px", color: "white",paddingTop:"20px"}}>
+                            <img src={logoImage} alt="SkyTrip Logo" style={styles.footerLogo} /> SkyTrip 
+                        </Typography>
+                        <Typography variant="h6" sx={{ margin: "15px", fontSize: '30px', color: "white" }}>
+                            {" "}
+                            Branding 
+                        </Typography>
+                        <Typography variant="h6" sx={{ margin: "15px", color: "#fad3c3", fontSize: '16px' }}>
+                            {" "}
+                            Design
+                        </Typography>
+                        <Typography variant="h6" sx={{ margin: "15px", color: "#fad3c3", fontSize: '16px' }}>
+                            {" "}
+                            Marketing
+                        </Typography>
+                        <Typography variant="h6" sx={{ margin: "15px", color: "#fad3c3", fontSize: '16px' }}>
+                            {" "}
+                            Tourist Spots
+                        </Typography>
+                       
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4} lg={3}>
+                        <Typography variant="h4" sx={{ margin: "15px", fontSize: '30px', paddingTop: "90px", color: "white" }}>
+                            Contact Us 
+                        </Typography>
+                        <Typography variant="h6" sx={{ margin: "15px", color: "#fad3c3", fontSize: '16px' }}>
+                            {" "}
+                            
+                            <Box sx={{ display: "flex", justifyContent: "start" ,gap:"10px"}}>
+                                <FaFacebook size={"30px"} color="#258fdb" />
+                                <FaLinkedin size={"30px"} color="#65fafc" /> 
+                                <FaTwitter size={"30px"} color="#0841a3" backgroundColor="#ffff"/>
+                            </Box>
+                        </Typography>
+                        <Typography variant="h6" sx={{ margin: "15px", color: "#fad3c3", fontSize: '16px' }}>
+                            {" "}
+                            Jobs
+                        </Typography>
+                        <Typography variant="h6" sx={{ margin: "15px", color: "#fad3c3", fontSize: '16px' }}>
+                            {" "}
+                            Advertisement
+                        </Typography>
+                        <Typography variant="h6" sx={{ margin: "15px", color: "#fad3c3", fontSize: '16px' }}>
+                            {" "}
+                            Features
+                        </Typography>
+                      
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4} lg={3}>
+                        <Typography variant="h3" sx={{ margin: "15px", fontSize: '30px', paddingTop: "90px", color: "white" }}>
+                           Explore
+                        </Typography>
+                        <Typography variant="h6" sx={{ margin: "15px", color: "#fad3c3", fontSize: '16px' }}>
+                            {" "}
+                            Enterprise
+                        </Typography>
+                        <Typography variant="h6" sx={{ margin: "15px", color: "#fad3c3", fontSize: '16px' }}>
+                            {" "}
+                           Security 
+                        </Typography>
+                        <Typography variant="h6" sx={{ margin: "15px", color: "#fad3c3", fontSize: '16px' }}>
+                            {" "}
+                            Pricing
+                        </Typography>
+                        <Typography variant="h6" sx={{ margin: "15px", color: "#fad3c3", fontSize: '16px' }}>
+                            {" "}
+                            Press Kit
+                        </Typography>
+                       
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4} lg={3}>
+                        <Typography variant="h4" sx={{ margin: "15px", fontSize: '30px', paddingTop: "90px",color:"white" }}>
+                            Social Media
+                        </Typography>
+                        <Typography variant="h6" sx={{ margin: "15px", color: "#fad3c3", fontSize: '16px' }}>
+                            {" "}
+                            Guide Hire
+                        </Typography>
+                        <Typography variant="h6" sx={{ margin: "15px", color: "#fad3c3", fontSize: '16px' }}>
+                            {" "}
+                            Terms of use
+                        </Typography>
+                        <Typography variant="h6" sx={{ margin: "15px", color: "#fad3c3", fontSize: '16px' }}>
+                            {" "}
+                         Privacy Policy
+                        </Typography>
+                        <Typography variant="h6" sx={{ margin: "15px", color: "#fad3c3", fontSize: '16px' }}>
+                            {" "}
+                            Cookie Policy
+                        </Typography>
+                        
+                    </Grid>
+                </Grid>
+                <Sticky/>
+            </Container>
             
-        </div>
-    );
+        </>
+    )
 };
 
 export default Footer;

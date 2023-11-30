@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import Nav from "../Pages/Shared/Nav/Nav";
 import Banner from "../Pages/Home/Banner/Banner";
 import SecondBanner from "../Pages/Shared/SecondBanner/SecondBanner";
+import Footer from "../Pages/Shared/Footer/Footer";
 
 
 const Root = () => {
@@ -41,7 +42,11 @@ const Root = () => {
             <div className="max-w-6xl mx-auto ">
                 <Outlet />
             </div>
-         
+            <div className="bg-gray-800">
+
+            
+            <Footer/>
+            </div>
        </div>
     );
 };

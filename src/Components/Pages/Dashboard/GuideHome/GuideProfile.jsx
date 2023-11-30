@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 
 import { useLoaderData } from "react-router-dom";
 
@@ -7,7 +8,7 @@ const GuideProfile = () => {
     const guide = useLoaderData();
     console.log(guide);
     const { contact_details, education, guide_email, guide_name, guide_pic, skills, work_experience, _id } = guide;
-
+console.log(guide)
   
     return (
         <div className="py-10 bg-gradient-to-l to-sky-100 via-slate-200 from-[#f2d0ca]">
@@ -19,7 +20,7 @@ const GuideProfile = () => {
 
             </div>
             {/* guide profile info  */}
-            <div className="flex items-start justify-center gap-8 shadow-xl  pt-5 pb-10 ">
+            {/* <div className="flex items-start justify-center gap-8 shadow-xl  pt-5 pb-10 ">
                 <div className="avatar">
                     <div className="w-48 rounded-xl">
                         <img src={guide_pic} />
@@ -44,11 +45,11 @@ const GuideProfile = () => {
 
                 </div>
 
-            </div>
+            </div> */}
             <div className="mb-12 py-5 flex items-start justify-between ">
                 <div className="h-full  w-[60%] ">
                     <div className="max-w-4xl   mx-auto flex flex-col justify-start pl-5">
-                        {/* <div className="flex items-start justify-start gap-8 px-12  py-5 ">
+                        <div className="flex items-start justify-start gap-8 px-12  py-5 ">
                             <div className="avatar">
                                 <div className="w-48 rounded-xl">
                                     <img src={guide_pic} />
@@ -73,7 +74,7 @@ const GuideProfile = () => {
 
                             </div>
 
-                        </div> */}
+                        </div>
 
                         <div className="pl-16 border rounded-xl shadow-xl border-gray-300 my-5 bg-gray-200/40">
                             <div className="flex flex-col my-5">
