@@ -6,21 +6,24 @@ import Footer from "../Pages/Shared/Footer/Footer";
 
 
 const Root = () => {
-    // const backgroundImageUrl = 'https://i.imgur.com/I9Im7zd.png';
+    const backgroundImageUrl = 'https://i.imgur.com/lLvJFih.png';
 
-    // const containerStyle = {
-    //     backgroundImage: `url(${backgroundImageUrl})`,
-    //     backgroundSize: 'cover',
-    //     backgroundRepeat: 'no-repeat',
-    //     backgroundPosition: 'center',
-    //     height: '100%',
-    //     width: '100%',
+    const containerStyle = {
+        backgroundImage: `url(${backgroundImageUrl})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        height: '100%',
+        width: '100%',
 
-    // };
+    };
     const location = useLocation()
-    const bgClass = location.pathname === "/" ? "bg-blue-100" : "bg-[#fff1ec]";
+    // const bgClass = location.pathname === "/" ? "bg-blue-100" : "bg-[#fff1ec]";
     return (
-        <div className={bgClass}>
+        <div
+            // className={bgClass}
+style={containerStyle}
+        >
             <Nav />
             {location.pathname === '/' ?
                 <> <Banner />
