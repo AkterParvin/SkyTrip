@@ -1,7 +1,10 @@
+import useUserRole from "../../Shared/Hooks/useUserRole";
 import Content from "./Content";
 
 
 const OverView = () => {
+    const [isAdmin, isGuide] = useUserRole();
+    console.log(isAdmin,isGuide)
     return (
         <div>
             

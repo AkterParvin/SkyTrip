@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 
 const useUserRole = () => {
-    const { user } = useContext(AuthContext);
+    const { user ,loading} = useContext(AuthContext);
     const axiosSecure = useAxiosSecure();
     const [isAdmin, setAdmin] = useState(false);
     const [isGuide, setGuide] = useState(false);
@@ -16,6 +16,7 @@ const useUserRole = () => {
 
     const { data: userRole = [], isLoading:roleIsLoading } = useQuery({
         queryKey: ["userRole", user?.email],
+        enabled:!loading,
         queryFn: async () => {
             const response = await axiosSecure.get(`/users/role/${user.email}`)
             // console.log(response.data.role);

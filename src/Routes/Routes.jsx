@@ -17,6 +17,8 @@ import AddPackage from "../Components/Pages/Dashboard/AddPackage/AddPackage";
 import GuideProfile from "../Components/Pages/Dashboard/GuideHome/GuideProfile";
 import AssignedTours from "../Components/Pages/Dashboard/AssignedTours/AssignedTours";
 import PrivateRoute from "../Routes/PrivateRoute";
+import GuideRoute from "./GuideRoute";
+import AdminRoute from "./AdminRoute";
 
 const Routes = createBrowserRouter([
     {
@@ -60,45 +62,45 @@ const Routes = createBrowserRouter([
             // Admin Routes 
             {
                 path: "adminprofile",
-                element: <AdminProfile />
+                element: <AdminRoute><AdminProfile /></AdminRoute> 
 
             },
             {
                 path: "allusers",
-                element: <AllUsers />
+                element: <AdminRoute> <AllUsers /></AdminRoute>
 
             },
             {
                 path: "addpackage",
-                element: <AddPackage />
+                element: <AdminRoute> <AddPackage /></AdminRoute>
 
             },
             // Guide Routes 
             {
                 path: "guideprofile/:guide_email",
-                element: <GuideProfile />,
+                element: <PrivateRoute>  <GuideProfile /></PrivateRoute> ,
                 loader: ({ params }) => fetch(`https://skytrip-server.vercel.app/guides/${params.guide_email}`)
 
             },
             {
                 path: "assignedtours",
-                element: <PrivateRoute> <AssignedTours /></PrivateRoute>
+                element:<GuideRoute><AssignedTours /></GuideRoute> 
 
             },
             // user routes 
             {
                 path: "userprofile",
-                element: <UserProfile />
+                element: <PrivateRoute>  <UserProfile /></PrivateRoute> 
 
             },
             {
                 path: "mywishlist",
-                element: <MyWishlist />
+                element: <PrivateRoute>  <MyWishlist /></PrivateRoute> 
 
             },
             {
                 path: "mybookings",
-                element: <MyBookings />
+                element: <PrivateRoute>  <MyBookings /></PrivateRoute> 
 
             },
 
