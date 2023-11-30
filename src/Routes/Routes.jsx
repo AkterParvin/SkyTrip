@@ -19,6 +19,8 @@ import AssignedTours from "../Components/Pages/Dashboard/AssignedTours/AssignedT
 import PrivateRoute from "../Routes/PrivateRoute";
 import GuideRoute from "./GuideRoute";
 import AdminRoute from "./AdminRoute";
+import Blogs from "../Components/Pages/Home/Blogs/Blogs";
+import BLogDetail from "../Components/Pages/Home/Blogs/BLogDetail";
 
 const Routes = createBrowserRouter([
     {
@@ -33,6 +35,15 @@ const Routes = createBrowserRouter([
             {
                 path: "/alltours",
                 element: <AllTours />
+            },
+            {
+                path: "/blogs",
+                element: <Blogs />
+            },
+            {
+                path: "/blogdetail/:id",
+                element: <BLogDetail />,
+                loader: ({ params }) => fetch(`https://skytrip-server.vercel.app/stories/${params.id}`)
             },
             {
                 path: "/tour/:type",

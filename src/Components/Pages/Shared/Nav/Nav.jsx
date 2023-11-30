@@ -99,7 +99,7 @@ const Nav = () => {
     }, []);
 
     return (
-        <div className={`${color ? "bg-[#f2a79c] transform duration-1000 " : "bg-gray-800/60 transform duration-1000  "
+        <div className={`${color ? "bg-[#f2a79c] transform duration-1000 " : "bg-blue-700/60 transform duration-1000  "
             } sticky top-0 z-30 border-gray-200 dark:bg-gray-900 h-[80px] transition-all duration-300 ease-in-out `}>
 
             <div className="navbar max-w-6xl mx-auto">
