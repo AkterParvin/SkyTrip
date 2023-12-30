@@ -11,6 +11,7 @@ const BookingDetails = ({ tour, handleDelete, bookings }) => {
     const { user } = useContext(AuthContext);
 
     const { tourist_name, tour_id, price, tourist_email, guide_email, type, date, image, title, touristImage, status, _id } = tour;
+    console.log(_id)
     return (
         <div className="w-[85%] mx-auto">
             <li className="flex flex-col px-5 shadow-lg rounded-lg py-6 sm:flex-row sm:justify-between bg-blue-100">
@@ -28,7 +29,7 @@ const BookingDetails = ({ tour, handleDelete, bookings }) => {
                             </div>
                             <div className="text-right">
                                 <p className="text-lg font-semibold mb-1"><span className='text-[#a84333] uppercase'>Price: </span> ${price}</p>
-                                <p className="text-sm  dark:text-gray-600 font-semibold mb-1">Guide Name:<span className='text-[#e8604c] italic uppercase '>{user?.displayName}</span>  </p>
+                                <p className="text-sm  dark:text-gray-600 font-semibold mb-1">Guide email:<span className='text-[#e8604c] italic uppercase '>{guide_email}</span>  </p>
                                 <p className="text-sm  dark:text-gray-600 font-semibold mb-2"> Status:<span className='text-[#e8604c] italic uppercase '> {status}</span> </p>
 
                                 <Link to={`/tourdetails/${tour_id}`}>
@@ -47,7 +48,7 @@ const BookingDetails = ({ tour, handleDelete, bookings }) => {
                         </div>
                         <div className="flex text-sm gap-3 mt-10">
                             {
-                                status === "in review" ? <> <button onClick={() => handleDelete(tour_id)} className="relative  items-center justify-start inline-block px-5 py-2 overflow-hidden font-medium transition-all bg-[#2F4858] rounded-xl hover:bg-[#f08f6f] group">
+                                status === "in review" ? <> <button onClick={() => handleDelete(_id)} className="relative  items-center justify-start inline-block px-5 py-2 overflow-hidden font-medium transition-all bg-[#2F4858] rounded-xl hover:bg-[#f08f6f] group">
                                     <span className="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-300 transition-all border-[#6baef1] rounded-xl"></span>
                                     <span className="relative w-full text-sm text-left text-gray-100 transition-colors duration-500 ease-in-out group-hover:text-gray-800 flex items-center justify-center gap-1">
                                         <FaTrash className="text-sm text-red-500"></FaTrash> <p>Cancel</p></span>

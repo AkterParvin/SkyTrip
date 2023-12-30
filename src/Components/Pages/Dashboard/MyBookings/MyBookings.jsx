@@ -19,6 +19,7 @@ const MyBookings = () => {
     const totalPrice = price.toFixed(2);
 
     const handleDelete = id => {
+        // console.log(id)
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -31,10 +32,11 @@ const MyBookings = () => {
             if (result.isConfirmed) {
                 axiosSecure.delete(`/bookings/${id}`)
                     .then(res => {
+                        console.log(res.data)
                         if (res.data.deletedCount > 0) {
                             Swal.fire(
                                 'Deleted!',
-                                'Your Wishlist item is deleted.',
+                                'Your booked item is deleted.',
                                 'success'
                             )
                             refetch()

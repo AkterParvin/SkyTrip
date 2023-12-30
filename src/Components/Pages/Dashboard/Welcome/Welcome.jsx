@@ -5,7 +5,8 @@ const Welcome = () => {
         <div>
             <div className="max-w-5xl p-4 mx-auto mt-6 space-y-1 text-center">
                
-                <h2 className="pb-3 text-3xl font-bold md:text-4xl text-blue-900">Welcome to User Dashboard</h2>
+                <h2 className="pb-3 text-3xl font-bold md:text-4xl text-blue-900">Welcome to Dashboard</h2>
+               
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Similique dolore distinctio asperiores, eveniet cum natus veniam <br /> neque eum voluptas accusantium.</p>
             </div>
             <div className="p-5 mx-auto sm:p-10 md:p-12 dark:bg-gray-800 dark:text-gray-100">

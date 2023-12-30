@@ -101,7 +101,8 @@ const AllTours = () => {
                             key={tour._id}
                             tour={tour}
                         >
-                        </TourCard>)}
+                        </TourCard>)
+                    }
                 </div>
             </div>
         </div>

@@ -3,6 +3,7 @@ import Nav from "../Pages/Shared/Nav/Nav";
 import Banner from "../Pages/Home/Banner/Banner";
 import SecondBanner from "../Pages/Shared/SecondBanner/SecondBanner";
 import Footer from "../Pages/Shared/Footer/Footer";
+import Nav2 from "../Pages/Shared/Nav/Nav2";
 
 
 const Root = () => {
@@ -24,6 +25,7 @@ const Root = () => {
             // className={bgClass}
 style={containerStyle}
         >
+            <Nav2/>
             <Nav />
             {location.pathname === '/' ?
                 <> <Banner />

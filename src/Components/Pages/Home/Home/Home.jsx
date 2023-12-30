@@ -8,6 +8,7 @@ import TabSection from "./TabSection";
 const Home = () => {
     return (
         <div className="">
+            
            <Features/>
            <TabSection/>
         </div>
