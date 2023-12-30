@@ -33,9 +33,9 @@ const Parallax = () => {
             <section className="sec bg-black text-white p-8">
                 <h2 className="text-4xl font-bold text-center mb-4">Parallax Scrolling Website</h2>
                 <p className="text-lg font-light text-justify">
-                    {/* Add your Lorem Ipsum content here */}
+               
                 </p>
-                {/* Repeat the content as needed */}
+              
             </section>
         </div>
     );

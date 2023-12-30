@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Nav2 = () => {
     return (
-        <div className="h-12 border-b-4 border-[#f97150] flex items-center justify-between gap-2 max-w-6xl mx-auto">
+        <div className="h-12 border-b-4 border-[#f97150] flex items-center justify-between gap-2 max-w-6xl mx-auto ">
             <div className="justify-start items-center md:flex hidden lg:gap-5 gap-3 px-2" >
                 <span className="flex items-center gap-2">
                     <FaPhoneSquare color="#4a5568" size={"18"}/>

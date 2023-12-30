@@ -11,7 +11,7 @@ const Banner = () => {
                 <div className="h-full bg-green-500 w-1/2"></div>
             </div> */}
    
-            <div className="sticky">
+            <div className="w-full h-full relative">
                 <img
                     src="https://i.imgur.com/UQySICf.jpg"
                     className="absolute inset-0 object-cover w-full h-full"

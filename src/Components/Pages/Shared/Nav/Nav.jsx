@@ -38,7 +38,7 @@ const Nav = () => {
         <li><Link to="/blogs">Bolgs</Link></li>
         <li><Link to="/contact">Contact</Link></li> */}
         <li>
-            <Link to="/" className="mr-2 relative px-4 py-2 overflow-hidden font-medium text-white bg-transparentrounded-lg shadow-inner group">
+            <Link to="/" className="mr-2 relative px-4 py-2 overflow-hidden font-medium text-black bg-transparent rounded-lg shadow-inner group">
             <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
             <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
             <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
@@ -48,7 +48,7 @@ const Nav = () => {
         </Link>
         </li>
         <li>
-            <Link to="/blogs" className="mr-2 relative px-4 py-2 overflow-hidden font-medium text-white bg-transparent  rounded-lg shadow-inner group">
+            <Link to="/blogs" className="mr-2 relative px-4 py-2 overflow-hidden font-medium text-black bg-transparent  rounded-lg shadow-inner group">
             <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
             <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
             <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
@@ -58,7 +58,7 @@ const Nav = () => {
         </Link>
         </li>
         <li>
-            <Link to="/" className="relative mr-2 px-3 py-2 overflow-hidden font-medium text-white bg-transparent rounded-lg shadow-inner group">
+            <Link to="/" className="relative mr-2 px-3 py-2 overflow-hidden font-medium text-black bg-transparent rounded-lg shadow-inner group">
             <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
             <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
             <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
@@ -68,7 +68,7 @@ const Nav = () => {
         </Link>
         </li>
         <li>
-            <Link to="/" className="relative  px-4 py-2 overflow-hidden font-medium text-white bg-transparent  rounded-lg shadow-inner group">
+            <Link to="/" className="relative  px-4 py-2 overflow-hidden font-medium text-black bg-transparent  rounded-lg shadow-inner group">
             <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
             <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
             <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
@@ -100,7 +100,7 @@ const Nav = () => {
     }, []);
 
     return (
-        <div className={`${color ? "bg-[#f97150]/80 transform duration-1000 " : "bg-[#232323] transform duration-1000  "
+        <div className={`${color ? "bg-[#f97150] transform duration-1000 " : "bg-white transform duration-1000  "
             } sticky top-0 z-30 border-gray-200 dark:bg-gray-900 h-20 transition-all duration-300 ease-in-out flex items-center `}>
 
             <div className="navbar max-w-6xl mx-auto ">
