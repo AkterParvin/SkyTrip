@@ -1,9 +1,10 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Nav from "../Pages/Shared/Nav/Nav";
-import Banner from "../Pages/Home/Banner/Banner";
+// import Banner from "../Pages/Home/Banner/Banner";
 import SecondBanner from "../Pages/Shared/SecondBanner/SecondBanner";
 import Footer from "../Pages/Shared/Footer/Footer";
 import Nav2 from "../Pages/Shared/Nav/Nav2";
+import Banner2 from "../Pages/Home/Banner/Banner2";
 
 
 const Root = () => {
@@ -28,8 +29,12 @@ style={containerStyle}
             <Nav2/>
             <Nav />
             {location.pathname === '/' ?
-                <> <Banner />
-                    <div className=" h-[140vh] w-full bg-no-repeat bg-opacity-60 bg-cover bg-fixed flex items-center justify-center " style={{ backgroundImage: 'url(https://i.imgur.com/rPBDuas.jpg)' }}>
+                <>
+                    {/* <Banner /> */}
+                    <Banner2/>
+                    <div className=" h-[140vh] w-full bg-no-repeat bg-opacity-60 bg-cover bg-fixed flex items-center justify-center "
+                        style={{ backgroundImage: 'url(https://i.imgur.com/rPBDuas.jpg)' }}
+                        >
 
                         <span className="flex flex-col items-center justify-center lg:w-[70%] w-[90%] text-center z-10">
                             <h2 className=" font-bold text-4xl leading-normal

@@ -100,8 +100,8 @@ const Nav = () => {
     }, []);
 
     return (
-        <div className={`${color ? "bg-[#f97150] transform duration-1000 " : "bg-white transform duration-1000  "
-            } sticky top-0 z-30 border-gray-200 dark:bg-gray-900 h-20 transition-all duration-300 ease-in-out flex items-center `}>
+        <div className={`${color ? "bg-[#f97150] transform duration-1000 " : "bg-gray-700/30 transform duration-1000  "
+            } sticky -top-1 z-30 border-gray-200 dark:bg-gray-900 h-20 transition-all duration-300 ease-in-out flex items-center `}>
 
             <div className="navbar max-w-6xl mx-auto ">
                 <div className="navbar-start">

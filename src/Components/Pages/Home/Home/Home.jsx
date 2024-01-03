@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import Banner from "../Banner/Banner";
+// import Banner from "../Banner/Banner";
 import Features from "../Features/Features";
 import TabSection from "./TabSection";
 
